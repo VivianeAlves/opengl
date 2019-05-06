@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="opengl"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/Viviane Alves/CLionProjects/opengl/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Viviane Alves/CLionProjects/opengl/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Viviane Alves/CLionProjects/opengl/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Viviane Alves/CLionProjects/opengl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Viviane Alves/CLionProjects/opengl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="opengl">
+				<Option output="C:/Users/Viviane Alves/CLionProjects/opengl/cmake-build-debug/opengl.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Viviane Alves/CLionProjects/opengl/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/MinGW/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Viviane Alves/CLionProjects/opengl/cmake-build-debug/Makefile&quot;  VERBOSE=1 opengl"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Viviane Alves/CLionProjects/opengl/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Viviane Alves/CLionProjects/opengl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Viviane Alves/CLionProjects/opengl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="opengl/fast">
+				<Option output="C:/Users/Viviane Alves/CLionProjects/opengl/cmake-build-debug/opengl.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Viviane Alves/CLionProjects/opengl/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/MinGW/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Viviane Alves/CLionProjects/opengl/cmake-build-debug/Makefile&quot;  VERBOSE=1 opengl/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Viviane Alves/CLionProjects/opengl/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Viviane Alves/CLionProjects/opengl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Viviane Alves/CLionProjects/opengl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/Viviane Alves/CLionProjects/opengl/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Viviane Alves/CLionProjects/opengl/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Viviane Alves/CLionProjects/opengl/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Viviane Alves/CLionProjects/opengl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Viviane Alves/CLionProjects/opengl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/Viviane Alves/CLionProjects/opengl/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Viviane Alves/CLionProjects/opengl/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Viviane Alves/CLionProjects/opengl/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Viviane Alves/CLionProjects/opengl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Viviane Alves/CLionProjects/opengl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/Cenario1.cpp">
+			<Option target="opengl"/>
+		</Unit>
+		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/Exemplo3D.cpp">
+			<Option target="opengl"/>
+		</Unit>
+		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/Modelagem Mesa.cpp">
+			<Option target="opengl"/>
+		</Unit>
+		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/Teapot Study.cpp">
+			<Option target="opengl"/>
+		</Unit>
+		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/aviao de papel.cpp">
+			<Option target="opengl"/>
+		</Unit>
+		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/banana.h">
+			<Option target="opengl"/>
+		</Unit>
+		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/basic_shapes.cpp">
+			<Option target="opengl"/>
+		</Unit>
+		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/braco.cpp">
+			<Option target="opengl"/>
+		</Unit>
+		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/camera.cpp">
+			<Option target="opengl"/>
+		</Unit>
+		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/camera.h">
+			<Option target="opengl"/>
+		</Unit>
+		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/carroTextura.cpp">
+			<Option target="opengl"/>
+		</Unit>
+		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/casa.cpp">
+			<Option target="opengl"/>
+		</Unit>
+		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/casaExer.cpp">
+			<Option target="opengl"/>
+		</Unit>
+		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/casaFlat.cpp">
+			<Option target="opengl"/>
+		</Unit>
+		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/cg2.cpp">
+			<Option target="opengl"/>
+		</Unit>
+		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/cubo 3D.cpp">
+			<Option target="opengl"/>
+		</Unit>
+		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/e1_loadandprint.cpp">
+			<Option target="opengl"/>
+		</Unit>
+		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/escala.cpp">
+			<Option target="opengl"/>
+		</Unit>
+		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/glm.c">
+			<Option target="opengl"/>
+		</Unit>
+		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/glm.h">
+			<Option target="opengl"/>
+		</Unit>
+		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/helloTeapot.cpp">
+			<Option target="opengl"/>
+		</Unit>
+		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/janela.cpp">
+			<Option target="opengl"/>
+		</Unit>
+		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/lerBMP.cpp">
+			<Option target="opengl"/>
+		</Unit>
+		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/lerObjetoTextura.c">
+			<Option target="opengl"/>
+		</Unit>
+		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/lerObjetos.cpp">
+			<Option target="opengl"/>
+		</Unit>
+		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/lightposition.c">
+			<Option target="opengl"/>
+		</Unit>
+		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/linha.cpp">
+			<Option target="opengl"/>
+		</Unit>
+		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/load.cpp">
+			<Option target="opengl"/>
+		</Unit>
+		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/main.cpp">
+			<Option target="opengl"/>
+		</Unit>
+		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/mochila.cpp">
+			<Option target="opengl"/>
+		</Unit>
+		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/mochila2.cpp">
+			<Option target="opengl"/>
+		</Unit>
+		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/moverEixo.cpp">
+			<Option target="opengl"/>
+		</Unit>
+		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/other.cpp">
+			<Option target="opengl"/>
+		</Unit>
+		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/pc.cpp">
+			<Option target="opengl"/>
+		</Unit>
+		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/quadrado.cpp">
+			<Option target="opengl"/>
+		</Unit>
+		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/rotacao.cpp">
+			<Option target="opengl"/>
+		</Unit>
+		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/teapotsgalore.cpp">
+			<Option target="opengl"/>
+		</Unit>
+		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/teste.cpp">
+			<Option target="opengl"/>
+		</Unit>
+		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/textglaux.cpp">
+			<Option target="opengl"/>
+		</Unit>
+		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/textures.cpp">
+			<Option target="opengl"/>
+		</Unit>
+		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/textures.h">
+			<Option target="opengl"/>
+		</Unit>
+		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/transform.cpp">
+			<Option target="opengl"/>
+		</Unit>
+		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
