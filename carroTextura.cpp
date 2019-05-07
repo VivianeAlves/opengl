@@ -67,14 +67,14 @@
 //    // Limpa a janela e o depth buffer
 //    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 //
-////    glEnableClientState(GL_VERTEX_ARRAY); //enable vertex array
-////    glEnableClientState(GL_NORMAL_ARRAY); //enable normal array
-////    glEnableClientState(GL_TEXTURE_COORD_ARRAY); //enable texcoord array
-////
-////    glVertexPointer(3, GL_FLOAT, 0, bananaVerts);
-////    glNormalPointer(GL_FLOAT, 0, bananaNormals);
-////    glTexCoordPointer(2, GL_FLOAT, 0, bananaTexCoords);
-////    glDrawArrays(GL_TRIANGLES, 0, bananaNumVerts);
+//    glEnableClientState(GL_VERTEX_ARRAY); //enable vertex array
+//    glEnableClientState(GL_NORMAL_ARRAY); //enable normal array
+//    glEnableClientState(GL_TEXTURE_COORD_ARRAY); //enable texcoord array
+//
+//    glVertexPointer(3, GL_FLOAT, 0, bananaVerts);
+//    glNormalPointer(GL_FLOAT, 0, bananaNormals);
+//    glTexCoordPointer(2, GL_FLOAT, 0, bananaTexCoords);
+//    glDrawArrays(GL_TRIANGLES, 0, bananaNumVerts);
 //
 //
 ////

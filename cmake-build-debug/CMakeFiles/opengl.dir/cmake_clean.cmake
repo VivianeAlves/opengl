@@ -31,7 +31,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/opengl.dir/linha.cpp.obj"
   "CMakeFiles/opengl.dir/load.cpp.obj"
   "CMakeFiles/opengl.dir/Cenario1.cpp.obj"
-  "CMakeFiles/opengl.dir/lerObjetos.cpp.obj"
   "CMakeFiles/opengl.dir/lerBMP.cpp.obj"
   "CMakeFiles/opengl.dir/other.cpp.obj"
   "CMakeFiles/opengl.dir/textglaux.cpp.obj"

@@ -689,33 +689,6 @@ lerObjetoTextura.c.s:
 	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/lerObjetoTextura.c.s
 .PHONY : lerObjetoTextura.c.s
 
-lerObjetos.obj: lerObjetos.cpp.obj
-
-.PHONY : lerObjetos.obj
-
-# target to build an object file
-lerObjetos.cpp.obj:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/lerObjetos.cpp.obj
-.PHONY : lerObjetos.cpp.obj
-
-lerObjetos.i: lerObjetos.cpp.i
-
-.PHONY : lerObjetos.i
-
-# target to preprocess a source file
-lerObjetos.cpp.i:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/lerObjetos.cpp.i
-.PHONY : lerObjetos.cpp.i
-
-lerObjetos.s: lerObjetos.cpp.s
-
-.PHONY : lerObjetos.s
-
-# target to generate assembly for a file
-lerObjetos.cpp.s:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/lerObjetos.cpp.s
-.PHONY : lerObjetos.cpp.s
-
 lightposition.obj: lightposition.c.obj
 
 .PHONY : lightposition.obj
@@ -1220,9 +1193,6 @@ help:
 	@echo ... lerObjetoTextura.obj
 	@echo ... lerObjetoTextura.i
 	@echo ... lerObjetoTextura.s
-	@echo ... lerObjetos.obj
-	@echo ... lerObjetos.i
-	@echo ... lerObjetos.s
 	@echo ... lightposition.obj
 	@echo ... lightposition.i
 	@echo ... lightposition.s

@@ -156,9 +156,6 @@
 		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/lerObjetoTextura.c">
 			<Option target="opengl"/>
 		</Unit>
-		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/lerObjetos.cpp">
-			<Option target="opengl"/>
-		</Unit>
 		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/lightposition.c">
 			<Option target="opengl"/>
 		</Unit>

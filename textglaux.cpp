@@ -80,7 +80,7 @@
 //    glTexCoord2f(1.0f, 1.0f); glVertex3f(-1.0f,  1.0f, -1.0f);
 //    glTexCoord2f(0.0f, 1.0f); glVertex3f( 1.0f,  1.0f, -1.0f);
 //    glTexCoord2f(0.0f, 0.0f); glVertex3f( 1.0f, -1.0f, -1.0f);
-//    // Face superior
+//     //Face superior
 //    glTexCoord2f(0.0f, 1.0f); glVertex3f(-1.0f,  1.0f, -1.0f);
 //    glTexCoord2f(0.0f, 0.0f); glVertex3f(-1.0f,  1.0f,  1.0f);
 //    glTexCoord2f(1.0f, 0.0f); glVertex3f( 1.0f,  1.0f,  1.0f);
@@ -145,7 +145,7 @@
 //    obsZ = 10;
 //
 //    // Comandos de inicialização para textura
-//    imagemTextura = LoadBMP("C:\\Users\\Viviane Alves\\CLionProjects\\opengl\\texturas\\darkwood.bmp");
+//    imagemTextura = LoadBMP("C:\\Users\\Viviane Alves\\CLionProjects\\opengl\\texturas\\1_store.bmp");
 //    glGenTextures(1, &idTextura);
 //    glBindTexture(GL_TEXTURE_2D, idTextura);
 //    glTexImage2D(GL_TEXTURE_2D, 0, 3, imagemTextura->sizeX,

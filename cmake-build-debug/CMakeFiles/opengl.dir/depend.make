@@ -305,8 +305,6 @@ CMakeFiles/opengl.dir/janela.cpp.obj: ../janela.cpp
 
 CMakeFiles/opengl.dir/lerBMP.cpp.obj: ../lerBMP.cpp
 
-CMakeFiles/opengl.dir/lerObjetos.cpp.obj: ../lerObjetos.cpp
-
 CMakeFiles/opengl.dir/linha.cpp.obj: ../linha.cpp
 
 CMakeFiles/opengl.dir/load.cpp.obj: ../load.cpp

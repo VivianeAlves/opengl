@@ -35,7 +35,6 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/Viviane Alves/CLionProjects/opengl/helloTeapot.cpp" "C:/Users/Viviane Alves/CLionProjects/opengl/cmake-build-debug/CMakeFiles/opengl.dir/helloTeapot.cpp.obj"
   "C:/Users/Viviane Alves/CLionProjects/opengl/janela.cpp" "C:/Users/Viviane Alves/CLionProjects/opengl/cmake-build-debug/CMakeFiles/opengl.dir/janela.cpp.obj"
   "C:/Users/Viviane Alves/CLionProjects/opengl/lerBMP.cpp" "C:/Users/Viviane Alves/CLionProjects/opengl/cmake-build-debug/CMakeFiles/opengl.dir/lerBMP.cpp.obj"
-  "C:/Users/Viviane Alves/CLionProjects/opengl/lerObjetos.cpp" "C:/Users/Viviane Alves/CLionProjects/opengl/cmake-build-debug/CMakeFiles/opengl.dir/lerObjetos.cpp.obj"
   "C:/Users/Viviane Alves/CLionProjects/opengl/linha.cpp" "C:/Users/Viviane Alves/CLionProjects/opengl/cmake-build-debug/CMakeFiles/opengl.dir/linha.cpp.obj"
   "C:/Users/Viviane Alves/CLionProjects/opengl/load.cpp" "C:/Users/Viviane Alves/CLionProjects/opengl/cmake-build-debug/CMakeFiles/opengl.dir/load.cpp.obj"
   "C:/Users/Viviane Alves/CLionProjects/opengl/main.cpp" "C:/Users/Viviane Alves/CLionProjects/opengl/cmake-build-debug/CMakeFiles/opengl.dir/main.cpp.obj"
