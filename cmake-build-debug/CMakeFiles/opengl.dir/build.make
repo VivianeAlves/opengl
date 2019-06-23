@@ -33,10 +33,10 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Users\Viviane Alves\Documents\Clion\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Users\Viviane Alves\Documents\CLion-2018.3.4\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Users\Viviane Alves\Documents\Clion\bin\cmake\win\bin\cmake.exe" -E remove -f
+RM = "C:\Users\Viviane Alves\Documents\CLion-2018.3.4\bin\cmake\win\bin\cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -56,52 +56,164 @@ include CMakeFiles/opengl.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/opengl.dir/flags.make
 
-CMakeFiles/opengl.dir/glm.c.obj: CMakeFiles/opengl.dir/flags.make
-CMakeFiles/opengl.dir/glm.c.obj: CMakeFiles/opengl.dir/includes_C.rsp
-CMakeFiles/opengl.dir/glm.c.obj: ../glm.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Viviane Alves\CLionProjects\opengl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/opengl.dir/glm.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\opengl.dir\glm.c.obj   -c "C:\Users\Viviane Alves\CLionProjects\opengl\glm.c"
+CMakeFiles/opengl.dir/teapotsgalore.cpp.obj: CMakeFiles/opengl.dir/flags.make
+CMakeFiles/opengl.dir/teapotsgalore.cpp.obj: CMakeFiles/opengl.dir/includes_CXX.rsp
+CMakeFiles/opengl.dir/teapotsgalore.cpp.obj: ../teapotsgalore.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Viviane Alves\CLionProjects\opengl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/opengl.dir/teapotsgalore.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\opengl.dir\teapotsgalore.cpp.obj -c "C:\Users\Viviane Alves\CLionProjects\opengl\teapotsgalore.cpp"
 
-CMakeFiles/opengl.dir/glm.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/opengl.dir/glm.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Viviane Alves\CLionProjects\opengl\glm.c" > CMakeFiles\opengl.dir\glm.c.i
+CMakeFiles/opengl.dir/teapotsgalore.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opengl.dir/teapotsgalore.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Viviane Alves\CLionProjects\opengl\teapotsgalore.cpp" > CMakeFiles\opengl.dir\teapotsgalore.cpp.i
 
-CMakeFiles/opengl.dir/glm.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/opengl.dir/glm.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Viviane Alves\CLionProjects\opengl\glm.c" -o CMakeFiles\opengl.dir\glm.c.s
+CMakeFiles/opengl.dir/teapotsgalore.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opengl.dir/teapotsgalore.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Viviane Alves\CLionProjects\opengl\teapotsgalore.cpp" -o CMakeFiles\opengl.dir\teapotsgalore.cpp.s
 
-CMakeFiles/opengl.dir/lightposition.c.obj: CMakeFiles/opengl.dir/flags.make
-CMakeFiles/opengl.dir/lightposition.c.obj: CMakeFiles/opengl.dir/includes_C.rsp
-CMakeFiles/opengl.dir/lightposition.c.obj: ../lightposition.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Viviane Alves\CLionProjects\opengl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/opengl.dir/lightposition.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\opengl.dir\lightposition.c.obj   -c "C:\Users\Viviane Alves\CLionProjects\opengl\lightposition.c"
+CMakeFiles/opengl.dir/trabalho2.cpp.obj: CMakeFiles/opengl.dir/flags.make
+CMakeFiles/opengl.dir/trabalho2.cpp.obj: CMakeFiles/opengl.dir/includes_CXX.rsp
+CMakeFiles/opengl.dir/trabalho2.cpp.obj: ../trabalho2.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Viviane Alves\CLionProjects\opengl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/opengl.dir/trabalho2.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\opengl.dir\trabalho2.cpp.obj -c "C:\Users\Viviane Alves\CLionProjects\opengl\trabalho2.cpp"
 
-CMakeFiles/opengl.dir/lightposition.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/opengl.dir/lightposition.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Viviane Alves\CLionProjects\opengl\lightposition.c" > CMakeFiles\opengl.dir\lightposition.c.i
+CMakeFiles/opengl.dir/trabalho2.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opengl.dir/trabalho2.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Viviane Alves\CLionProjects\opengl\trabalho2.cpp" > CMakeFiles\opengl.dir\trabalho2.cpp.i
 
-CMakeFiles/opengl.dir/lightposition.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/opengl.dir/lightposition.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Viviane Alves\CLionProjects\opengl\lightposition.c" -o CMakeFiles\opengl.dir\lightposition.c.s
+CMakeFiles/opengl.dir/trabalho2.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opengl.dir/trabalho2.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Viviane Alves\CLionProjects\opengl\trabalho2.cpp" -o CMakeFiles\opengl.dir\trabalho2.cpp.s
 
-CMakeFiles/opengl.dir/camera.cpp.obj: CMakeFiles/opengl.dir/flags.make
-CMakeFiles/opengl.dir/camera.cpp.obj: CMakeFiles/opengl.dir/includes_CXX.rsp
-CMakeFiles/opengl.dir/camera.cpp.obj: ../camera.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Viviane Alves\CLionProjects\opengl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/opengl.dir/camera.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\opengl.dir\camera.cpp.obj -c "C:\Users\Viviane Alves\CLionProjects\opengl\camera.cpp"
+CMakeFiles/opengl.dir/teste.c.obj: CMakeFiles/opengl.dir/flags.make
+CMakeFiles/opengl.dir/teste.c.obj: CMakeFiles/opengl.dir/includes_C.rsp
+CMakeFiles/opengl.dir/teste.c.obj: ../teste.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Viviane Alves\CLionProjects\opengl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/opengl.dir/teste.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\opengl.dir\teste.c.obj   -c "C:\Users\Viviane Alves\CLionProjects\opengl\teste.c"
 
-CMakeFiles/opengl.dir/camera.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opengl.dir/camera.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Viviane Alves\CLionProjects\opengl\camera.cpp" > CMakeFiles\opengl.dir\camera.cpp.i
+CMakeFiles/opengl.dir/teste.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/opengl.dir/teste.c.i"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Viviane Alves\CLionProjects\opengl\teste.c" > CMakeFiles\opengl.dir\teste.c.i
 
-CMakeFiles/opengl.dir/camera.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opengl.dir/camera.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Viviane Alves\CLionProjects\opengl\camera.cpp" -o CMakeFiles\opengl.dir\camera.cpp.s
+CMakeFiles/opengl.dir/teste.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/opengl.dir/teste.c.s"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Viviane Alves\CLionProjects\opengl\teste.c" -o CMakeFiles\opengl.dir\teste.c.s
+
+CMakeFiles/opengl.dir/trackball.cpp.obj: CMakeFiles/opengl.dir/flags.make
+CMakeFiles/opengl.dir/trackball.cpp.obj: CMakeFiles/opengl.dir/includes_CXX.rsp
+CMakeFiles/opengl.dir/trackball.cpp.obj: ../trackball.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Viviane Alves\CLionProjects\opengl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/opengl.dir/trackball.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\opengl.dir\trackball.cpp.obj -c "C:\Users\Viviane Alves\CLionProjects\opengl\trackball.cpp"
+
+CMakeFiles/opengl.dir/trackball.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opengl.dir/trackball.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Viviane Alves\CLionProjects\opengl\trackball.cpp" > CMakeFiles\opengl.dir\trackball.cpp.i
+
+CMakeFiles/opengl.dir/trackball.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opengl.dir/trackball.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Viviane Alves\CLionProjects\opengl\trackball.cpp" -o CMakeFiles\opengl.dir\trackball.cpp.s
+
+CMakeFiles/opengl.dir/primitive.cpp.obj: CMakeFiles/opengl.dir/flags.make
+CMakeFiles/opengl.dir/primitive.cpp.obj: CMakeFiles/opengl.dir/includes_CXX.rsp
+CMakeFiles/opengl.dir/primitive.cpp.obj: ../primitive.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Viviane Alves\CLionProjects\opengl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/opengl.dir/primitive.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\opengl.dir\primitive.cpp.obj -c "C:\Users\Viviane Alves\CLionProjects\opengl\primitive.cpp"
+
+CMakeFiles/opengl.dir/primitive.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opengl.dir/primitive.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Viviane Alves\CLionProjects\opengl\primitive.cpp" > CMakeFiles\opengl.dir\primitive.cpp.i
+
+CMakeFiles/opengl.dir/primitive.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opengl.dir/primitive.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Viviane Alves\CLionProjects\opengl\primitive.cpp" -o CMakeFiles\opengl.dir\primitive.cpp.s
+
+CMakeFiles/opengl.dir/a2.cpp.obj: CMakeFiles/opengl.dir/flags.make
+CMakeFiles/opengl.dir/a2.cpp.obj: CMakeFiles/opengl.dir/includes_CXX.rsp
+CMakeFiles/opengl.dir/a2.cpp.obj: ../a2.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Viviane Alves\CLionProjects\opengl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/opengl.dir/a2.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\opengl.dir\a2.cpp.obj -c "C:\Users\Viviane Alves\CLionProjects\opengl\a2.cpp"
+
+CMakeFiles/opengl.dir/a2.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opengl.dir/a2.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Viviane Alves\CLionProjects\opengl\a2.cpp" > CMakeFiles\opengl.dir\a2.cpp.i
+
+CMakeFiles/opengl.dir/a2.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opengl.dir/a2.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Viviane Alves\CLionProjects\opengl\a2.cpp" -o CMakeFiles\opengl.dir\a2.cpp.s
+
+CMakeFiles/opengl.dir/AndroidBot_Main.c.obj: CMakeFiles/opengl.dir/flags.make
+CMakeFiles/opengl.dir/AndroidBot_Main.c.obj: CMakeFiles/opengl.dir/includes_C.rsp
+CMakeFiles/opengl.dir/AndroidBot_Main.c.obj: ../AndroidBot_Main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Viviane Alves\CLionProjects\opengl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/opengl.dir/AndroidBot_Main.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\opengl.dir\AndroidBot_Main.c.obj   -c "C:\Users\Viviane Alves\CLionProjects\opengl\AndroidBot_Main.c"
+
+CMakeFiles/opengl.dir/AndroidBot_Main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/opengl.dir/AndroidBot_Main.c.i"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Viviane Alves\CLionProjects\opengl\AndroidBot_Main.c" > CMakeFiles\opengl.dir\AndroidBot_Main.c.i
+
+CMakeFiles/opengl.dir/AndroidBot_Main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/opengl.dir/AndroidBot_Main.c.s"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Viviane Alves\CLionProjects\opengl\AndroidBot_Main.c" -o CMakeFiles\opengl.dir\AndroidBot_Main.c.s
+
+CMakeFiles/opengl.dir/AndroidBot_Activity.c.obj: CMakeFiles/opengl.dir/flags.make
+CMakeFiles/opengl.dir/AndroidBot_Activity.c.obj: CMakeFiles/opengl.dir/includes_C.rsp
+CMakeFiles/opengl.dir/AndroidBot_Activity.c.obj: ../AndroidBot_Activity.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Viviane Alves\CLionProjects\opengl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/opengl.dir/AndroidBot_Activity.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\opengl.dir\AndroidBot_Activity.c.obj   -c "C:\Users\Viviane Alves\CLionProjects\opengl\AndroidBot_Activity.c"
+
+CMakeFiles/opengl.dir/AndroidBot_Activity.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/opengl.dir/AndroidBot_Activity.c.i"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Viviane Alves\CLionProjects\opengl\AndroidBot_Activity.c" > CMakeFiles\opengl.dir\AndroidBot_Activity.c.i
+
+CMakeFiles/opengl.dir/AndroidBot_Activity.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/opengl.dir/AndroidBot_Activity.c.s"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Viviane Alves\CLionProjects\opengl\AndroidBot_Activity.c" -o CMakeFiles\opengl.dir\AndroidBot_Activity.c.s
+
+CMakeFiles/opengl.dir/AndroidBot_Display.c.obj: CMakeFiles/opengl.dir/flags.make
+CMakeFiles/opengl.dir/AndroidBot_Display.c.obj: CMakeFiles/opengl.dir/includes_C.rsp
+CMakeFiles/opengl.dir/AndroidBot_Display.c.obj: ../AndroidBot_Display.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Viviane Alves\CLionProjects\opengl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/opengl.dir/AndroidBot_Display.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\opengl.dir\AndroidBot_Display.c.obj   -c "C:\Users\Viviane Alves\CLionProjects\opengl\AndroidBot_Display.c"
+
+CMakeFiles/opengl.dir/AndroidBot_Display.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/opengl.dir/AndroidBot_Display.c.i"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Viviane Alves\CLionProjects\opengl\AndroidBot_Display.c" > CMakeFiles\opengl.dir\AndroidBot_Display.c.i
+
+CMakeFiles/opengl.dir/AndroidBot_Display.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/opengl.dir/AndroidBot_Display.c.s"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Viviane Alves\CLionProjects\opengl\AndroidBot_Display.c" -o CMakeFiles\opengl.dir\AndroidBot_Display.c.s
+
+CMakeFiles/opengl.dir/AndroidBot_Modeling.c.obj: CMakeFiles/opengl.dir/flags.make
+CMakeFiles/opengl.dir/AndroidBot_Modeling.c.obj: CMakeFiles/opengl.dir/includes_C.rsp
+CMakeFiles/opengl.dir/AndroidBot_Modeling.c.obj: ../AndroidBot_Modeling.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Viviane Alves\CLionProjects\opengl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/opengl.dir/AndroidBot_Modeling.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\opengl.dir\AndroidBot_Modeling.c.obj   -c "C:\Users\Viviane Alves\CLionProjects\opengl\AndroidBot_Modeling.c"
+
+CMakeFiles/opengl.dir/AndroidBot_Modeling.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/opengl.dir/AndroidBot_Modeling.c.i"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Viviane Alves\CLionProjects\opengl\AndroidBot_Modeling.c" > CMakeFiles\opengl.dir\AndroidBot_Modeling.c.i
+
+CMakeFiles/opengl.dir/AndroidBot_Modeling.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/opengl.dir/AndroidBot_Modeling.c.s"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Viviane Alves\CLionProjects\opengl\AndroidBot_Modeling.c" -o CMakeFiles\opengl.dir\AndroidBot_Modeling.c.s
+
+CMakeFiles/opengl.dir/skating.cpp.obj: CMakeFiles/opengl.dir/flags.make
+CMakeFiles/opengl.dir/skating.cpp.obj: CMakeFiles/opengl.dir/includes_CXX.rsp
+CMakeFiles/opengl.dir/skating.cpp.obj: ../skating.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Viviane Alves\CLionProjects\opengl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/opengl.dir/skating.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\opengl.dir\skating.cpp.obj -c "C:\Users\Viviane Alves\CLionProjects\opengl\skating.cpp"
+
+CMakeFiles/opengl.dir/skating.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opengl.dir/skating.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Viviane Alves\CLionProjects\opengl\skating.cpp" > CMakeFiles\opengl.dir\skating.cpp.i
+
+CMakeFiles/opengl.dir/skating.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opengl.dir/skating.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Viviane Alves\CLionProjects\opengl\skating.cpp" -o CMakeFiles\opengl.dir\skating.cpp.s
 
 CMakeFiles/opengl.dir/main.cpp.obj: CMakeFiles/opengl.dir/flags.make
 CMakeFiles/opengl.dir/main.cpp.obj: CMakeFiles/opengl.dir/includes_CXX.rsp
 CMakeFiles/opengl.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Viviane Alves\CLionProjects\opengl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/opengl.dir/main.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Viviane Alves\CLionProjects\opengl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/opengl.dir/main.cpp.obj"
 	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\opengl.dir\main.cpp.obj -c "C:\Users\Viviane Alves\CLionProjects\opengl\main.cpp"
 
 CMakeFiles/opengl.dir/main.cpp.i: cmake_force
@@ -112,10 +224,94 @@ CMakeFiles/opengl.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opengl.dir/main.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Viviane Alves\CLionProjects\opengl\main.cpp" -o CMakeFiles\opengl.dir\main.cpp.s
 
+CMakeFiles/opengl.dir/glm.c.obj: CMakeFiles/opengl.dir/flags.make
+CMakeFiles/opengl.dir/glm.c.obj: CMakeFiles/opengl.dir/includes_C.rsp
+CMakeFiles/opengl.dir/glm.c.obj: ../glm.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Viviane Alves\CLionProjects\opengl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/opengl.dir/glm.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\opengl.dir\glm.c.obj   -c "C:\Users\Viviane Alves\CLionProjects\opengl\glm.c"
+
+CMakeFiles/opengl.dir/glm.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/opengl.dir/glm.c.i"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Viviane Alves\CLionProjects\opengl\glm.c" > CMakeFiles\opengl.dir\glm.c.i
+
+CMakeFiles/opengl.dir/glm.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/opengl.dir/glm.c.s"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Viviane Alves\CLionProjects\opengl\glm.c" -o CMakeFiles\opengl.dir\glm.c.s
+
+CMakeFiles/opengl.dir/main1.cpp.obj: CMakeFiles/opengl.dir/flags.make
+CMakeFiles/opengl.dir/main1.cpp.obj: CMakeFiles/opengl.dir/includes_CXX.rsp
+CMakeFiles/opengl.dir/main1.cpp.obj: ../main1.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Viviane Alves\CLionProjects\opengl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/opengl.dir/main1.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\opengl.dir\main1.cpp.obj -c "C:\Users\Viviane Alves\CLionProjects\opengl\main1.cpp"
+
+CMakeFiles/opengl.dir/main1.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opengl.dir/main1.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Viviane Alves\CLionProjects\opengl\main1.cpp" > CMakeFiles\opengl.dir\main1.cpp.i
+
+CMakeFiles/opengl.dir/main1.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opengl.dir/main1.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Viviane Alves\CLionProjects\opengl\main1.cpp" -o CMakeFiles\opengl.dir\main1.cpp.s
+
+CMakeFiles/opengl.dir/Teapot_Study.cpp.obj: CMakeFiles/opengl.dir/flags.make
+CMakeFiles/opengl.dir/Teapot_Study.cpp.obj: CMakeFiles/opengl.dir/includes_CXX.rsp
+CMakeFiles/opengl.dir/Teapot_Study.cpp.obj: ../Teapot_Study.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Viviane Alves\CLionProjects\opengl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/opengl.dir/Teapot_Study.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\opengl.dir\Teapot_Study.cpp.obj -c "C:\Users\Viviane Alves\CLionProjects\opengl\Teapot_Study.cpp"
+
+CMakeFiles/opengl.dir/Teapot_Study.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opengl.dir/Teapot_Study.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Viviane Alves\CLionProjects\opengl\Teapot_Study.cpp" > CMakeFiles\opengl.dir\Teapot_Study.cpp.i
+
+CMakeFiles/opengl.dir/Teapot_Study.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opengl.dir/Teapot_Study.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Viviane Alves\CLionProjects\opengl\Teapot_Study.cpp" -o CMakeFiles\opengl.dir\Teapot_Study.cpp.s
+
+CMakeFiles/opengl.dir/lerBMP.cpp.obj: CMakeFiles/opengl.dir/flags.make
+CMakeFiles/opengl.dir/lerBMP.cpp.obj: CMakeFiles/opengl.dir/includes_CXX.rsp
+CMakeFiles/opengl.dir/lerBMP.cpp.obj: ../lerBMP.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Viviane Alves\CLionProjects\opengl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/opengl.dir/lerBMP.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\opengl.dir\lerBMP.cpp.obj -c "C:\Users\Viviane Alves\CLionProjects\opengl\lerBMP.cpp"
+
+CMakeFiles/opengl.dir/lerBMP.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opengl.dir/lerBMP.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Viviane Alves\CLionProjects\opengl\lerBMP.cpp" > CMakeFiles\opengl.dir\lerBMP.cpp.i
+
+CMakeFiles/opengl.dir/lerBMP.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opengl.dir/lerBMP.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Viviane Alves\CLionProjects\opengl\lerBMP.cpp" -o CMakeFiles\opengl.dir\lerBMP.cpp.s
+
+CMakeFiles/opengl.dir/lightposition.c.obj: CMakeFiles/opengl.dir/flags.make
+CMakeFiles/opengl.dir/lightposition.c.obj: CMakeFiles/opengl.dir/includes_C.rsp
+CMakeFiles/opengl.dir/lightposition.c.obj: ../lightposition.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Viviane Alves\CLionProjects\opengl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/opengl.dir/lightposition.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\opengl.dir\lightposition.c.obj   -c "C:\Users\Viviane Alves\CLionProjects\opengl\lightposition.c"
+
+CMakeFiles/opengl.dir/lightposition.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/opengl.dir/lightposition.c.i"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Viviane Alves\CLionProjects\opengl\lightposition.c" > CMakeFiles\opengl.dir\lightposition.c.i
+
+CMakeFiles/opengl.dir/lightposition.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/opengl.dir/lightposition.c.s"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Viviane Alves\CLionProjects\opengl\lightposition.c" -o CMakeFiles\opengl.dir\lightposition.c.s
+
+CMakeFiles/opengl.dir/Camera.cpp.obj: CMakeFiles/opengl.dir/flags.make
+CMakeFiles/opengl.dir/Camera.cpp.obj: CMakeFiles/opengl.dir/includes_CXX.rsp
+CMakeFiles/opengl.dir/Camera.cpp.obj: ../Camera.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Viviane Alves\CLionProjects\opengl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/opengl.dir/Camera.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\opengl.dir\Camera.cpp.obj -c "C:\Users\Viviane Alves\CLionProjects\opengl\Camera.cpp"
+
+CMakeFiles/opengl.dir/Camera.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opengl.dir/Camera.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Viviane Alves\CLionProjects\opengl\Camera.cpp" > CMakeFiles\opengl.dir\Camera.cpp.i
+
+CMakeFiles/opengl.dir/Camera.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opengl.dir/Camera.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Viviane Alves\CLionProjects\opengl\Camera.cpp" -o CMakeFiles\opengl.dir\Camera.cpp.s
+
 CMakeFiles/opengl.dir/textures.cpp.obj: CMakeFiles/opengl.dir/flags.make
 CMakeFiles/opengl.dir/textures.cpp.obj: CMakeFiles/opengl.dir/includes_CXX.rsp
 CMakeFiles/opengl.dir/textures.cpp.obj: ../textures.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Viviane Alves\CLionProjects\opengl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/opengl.dir/textures.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Viviane Alves\CLionProjects\opengl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/opengl.dir/textures.cpp.obj"
 	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\opengl.dir\textures.cpp.obj -c "C:\Users\Viviane Alves\CLionProjects\opengl\textures.cpp"
 
 CMakeFiles/opengl.dir/textures.cpp.i: cmake_force
@@ -129,7 +325,7 @@ CMakeFiles/opengl.dir/textures.cpp.s: cmake_force
 CMakeFiles/opengl.dir/e1_loadandprint.cpp.obj: CMakeFiles/opengl.dir/flags.make
 CMakeFiles/opengl.dir/e1_loadandprint.cpp.obj: CMakeFiles/opengl.dir/includes_CXX.rsp
 CMakeFiles/opengl.dir/e1_loadandprint.cpp.obj: ../e1_loadandprint.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Viviane Alves\CLionProjects\opengl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/opengl.dir/e1_loadandprint.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Viviane Alves\CLionProjects\opengl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/opengl.dir/e1_loadandprint.cpp.obj"
 	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\opengl.dir\e1_loadandprint.cpp.obj -c "C:\Users\Viviane Alves\CLionProjects\opengl\e1_loadandprint.cpp"
 
 CMakeFiles/opengl.dir/e1_loadandprint.cpp.i: cmake_force
@@ -140,262 +336,10 @@ CMakeFiles/opengl.dir/e1_loadandprint.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opengl.dir/e1_loadandprint.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Viviane Alves\CLionProjects\opengl\e1_loadandprint.cpp" -o CMakeFiles\opengl.dir\e1_loadandprint.cpp.s
 
-CMakeFiles/opengl.dir/basic_shapes.cpp.obj: CMakeFiles/opengl.dir/flags.make
-CMakeFiles/opengl.dir/basic_shapes.cpp.obj: CMakeFiles/opengl.dir/includes_CXX.rsp
-CMakeFiles/opengl.dir/basic_shapes.cpp.obj: ../basic_shapes.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Viviane Alves\CLionProjects\opengl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/opengl.dir/basic_shapes.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\opengl.dir\basic_shapes.cpp.obj -c "C:\Users\Viviane Alves\CLionProjects\opengl\basic_shapes.cpp"
-
-CMakeFiles/opengl.dir/basic_shapes.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opengl.dir/basic_shapes.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Viviane Alves\CLionProjects\opengl\basic_shapes.cpp" > CMakeFiles\opengl.dir\basic_shapes.cpp.i
-
-CMakeFiles/opengl.dir/basic_shapes.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opengl.dir/basic_shapes.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Viviane Alves\CLionProjects\opengl\basic_shapes.cpp" -o CMakeFiles\opengl.dir\basic_shapes.cpp.s
-
-CMakeFiles/opengl.dir/janela.cpp.obj: CMakeFiles/opengl.dir/flags.make
-CMakeFiles/opengl.dir/janela.cpp.obj: CMakeFiles/opengl.dir/includes_CXX.rsp
-CMakeFiles/opengl.dir/janela.cpp.obj: ../janela.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Viviane Alves\CLionProjects\opengl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/opengl.dir/janela.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\opengl.dir\janela.cpp.obj -c "C:\Users\Viviane Alves\CLionProjects\opengl\janela.cpp"
-
-CMakeFiles/opengl.dir/janela.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opengl.dir/janela.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Viviane Alves\CLionProjects\opengl\janela.cpp" > CMakeFiles\opengl.dir\janela.cpp.i
-
-CMakeFiles/opengl.dir/janela.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opengl.dir/janela.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Viviane Alves\CLionProjects\opengl\janela.cpp" -o CMakeFiles\opengl.dir\janela.cpp.s
-
-CMakeFiles/opengl.dir/pc.cpp.obj: CMakeFiles/opengl.dir/flags.make
-CMakeFiles/opengl.dir/pc.cpp.obj: CMakeFiles/opengl.dir/includes_CXX.rsp
-CMakeFiles/opengl.dir/pc.cpp.obj: ../pc.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Viviane Alves\CLionProjects\opengl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/opengl.dir/pc.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\opengl.dir\pc.cpp.obj -c "C:\Users\Viviane Alves\CLionProjects\opengl\pc.cpp"
-
-CMakeFiles/opengl.dir/pc.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opengl.dir/pc.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Viviane Alves\CLionProjects\opengl\pc.cpp" > CMakeFiles\opengl.dir\pc.cpp.i
-
-CMakeFiles/opengl.dir/pc.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opengl.dir/pc.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Viviane Alves\CLionProjects\opengl\pc.cpp" -o CMakeFiles\opengl.dir\pc.cpp.s
-
-CMakeFiles/opengl.dir/casaFlat.cpp.obj: CMakeFiles/opengl.dir/flags.make
-CMakeFiles/opengl.dir/casaFlat.cpp.obj: CMakeFiles/opengl.dir/includes_CXX.rsp
-CMakeFiles/opengl.dir/casaFlat.cpp.obj: ../casaFlat.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Viviane Alves\CLionProjects\opengl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/opengl.dir/casaFlat.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\opengl.dir\casaFlat.cpp.obj -c "C:\Users\Viviane Alves\CLionProjects\opengl\casaFlat.cpp"
-
-CMakeFiles/opengl.dir/casaFlat.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opengl.dir/casaFlat.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Viviane Alves\CLionProjects\opengl\casaFlat.cpp" > CMakeFiles\opengl.dir\casaFlat.cpp.i
-
-CMakeFiles/opengl.dir/casaFlat.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opengl.dir/casaFlat.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Viviane Alves\CLionProjects\opengl\casaFlat.cpp" -o CMakeFiles\opengl.dir\casaFlat.cpp.s
-
-CMakeFiles/opengl.dir/casa.cpp.obj: CMakeFiles/opengl.dir/flags.make
-CMakeFiles/opengl.dir/casa.cpp.obj: CMakeFiles/opengl.dir/includes_CXX.rsp
-CMakeFiles/opengl.dir/casa.cpp.obj: ../casa.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Viviane Alves\CLionProjects\opengl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/opengl.dir/casa.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\opengl.dir\casa.cpp.obj -c "C:\Users\Viviane Alves\CLionProjects\opengl\casa.cpp"
-
-CMakeFiles/opengl.dir/casa.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opengl.dir/casa.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Viviane Alves\CLionProjects\opengl\casa.cpp" > CMakeFiles\opengl.dir\casa.cpp.i
-
-CMakeFiles/opengl.dir/casa.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opengl.dir/casa.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Viviane Alves\CLionProjects\opengl\casa.cpp" -o CMakeFiles\opengl.dir\casa.cpp.s
-
-CMakeFiles/opengl.dir/quadrado.cpp.obj: CMakeFiles/opengl.dir/flags.make
-CMakeFiles/opengl.dir/quadrado.cpp.obj: CMakeFiles/opengl.dir/includes_CXX.rsp
-CMakeFiles/opengl.dir/quadrado.cpp.obj: ../quadrado.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Viviane Alves\CLionProjects\opengl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/opengl.dir/quadrado.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\opengl.dir\quadrado.cpp.obj -c "C:\Users\Viviane Alves\CLionProjects\opengl\quadrado.cpp"
-
-CMakeFiles/opengl.dir/quadrado.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opengl.dir/quadrado.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Viviane Alves\CLionProjects\opengl\quadrado.cpp" > CMakeFiles\opengl.dir\quadrado.cpp.i
-
-CMakeFiles/opengl.dir/quadrado.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opengl.dir/quadrado.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Viviane Alves\CLionProjects\opengl\quadrado.cpp" -o CMakeFiles\opengl.dir\quadrado.cpp.s
-
-CMakeFiles/opengl.dir/teste.cpp.obj: CMakeFiles/opengl.dir/flags.make
-CMakeFiles/opengl.dir/teste.cpp.obj: CMakeFiles/opengl.dir/includes_CXX.rsp
-CMakeFiles/opengl.dir/teste.cpp.obj: ../teste.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Viviane Alves\CLionProjects\opengl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/opengl.dir/teste.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\opengl.dir\teste.cpp.obj -c "C:\Users\Viviane Alves\CLionProjects\opengl\teste.cpp"
-
-CMakeFiles/opengl.dir/teste.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opengl.dir/teste.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Viviane Alves\CLionProjects\opengl\teste.cpp" > CMakeFiles\opengl.dir\teste.cpp.i
-
-CMakeFiles/opengl.dir/teste.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opengl.dir/teste.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Viviane Alves\CLionProjects\opengl\teste.cpp" -o CMakeFiles\opengl.dir\teste.cpp.s
-
-CMakeFiles/opengl.dir/casaExer.cpp.obj: CMakeFiles/opengl.dir/flags.make
-CMakeFiles/opengl.dir/casaExer.cpp.obj: CMakeFiles/opengl.dir/includes_CXX.rsp
-CMakeFiles/opengl.dir/casaExer.cpp.obj: ../casaExer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Viviane Alves\CLionProjects\opengl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/opengl.dir/casaExer.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\opengl.dir\casaExer.cpp.obj -c "C:\Users\Viviane Alves\CLionProjects\opengl\casaExer.cpp"
-
-CMakeFiles/opengl.dir/casaExer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opengl.dir/casaExer.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Viviane Alves\CLionProjects\opengl\casaExer.cpp" > CMakeFiles\opengl.dir\casaExer.cpp.i
-
-CMakeFiles/opengl.dir/casaExer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opengl.dir/casaExer.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Viviane Alves\CLionProjects\opengl\casaExer.cpp" -o CMakeFiles\opengl.dir\casaExer.cpp.s
-
-CMakeFiles/opengl.dir/escala.cpp.obj: CMakeFiles/opengl.dir/flags.make
-CMakeFiles/opengl.dir/escala.cpp.obj: CMakeFiles/opengl.dir/includes_CXX.rsp
-CMakeFiles/opengl.dir/escala.cpp.obj: ../escala.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Viviane Alves\CLionProjects\opengl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/opengl.dir/escala.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\opengl.dir\escala.cpp.obj -c "C:\Users\Viviane Alves\CLionProjects\opengl\escala.cpp"
-
-CMakeFiles/opengl.dir/escala.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opengl.dir/escala.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Viviane Alves\CLionProjects\opengl\escala.cpp" > CMakeFiles\opengl.dir\escala.cpp.i
-
-CMakeFiles/opengl.dir/escala.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opengl.dir/escala.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Viviane Alves\CLionProjects\opengl\escala.cpp" -o CMakeFiles\opengl.dir\escala.cpp.s
-
-CMakeFiles/opengl.dir/rotacao.cpp.obj: CMakeFiles/opengl.dir/flags.make
-CMakeFiles/opengl.dir/rotacao.cpp.obj: CMakeFiles/opengl.dir/includes_CXX.rsp
-CMakeFiles/opengl.dir/rotacao.cpp.obj: ../rotacao.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Viviane Alves\CLionProjects\opengl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/opengl.dir/rotacao.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\opengl.dir\rotacao.cpp.obj -c "C:\Users\Viviane Alves\CLionProjects\opengl\rotacao.cpp"
-
-CMakeFiles/opengl.dir/rotacao.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opengl.dir/rotacao.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Viviane Alves\CLionProjects\opengl\rotacao.cpp" > CMakeFiles\opengl.dir\rotacao.cpp.i
-
-CMakeFiles/opengl.dir/rotacao.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opengl.dir/rotacao.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Viviane Alves\CLionProjects\opengl\rotacao.cpp" -o CMakeFiles\opengl.dir\rotacao.cpp.s
-
-CMakeFiles/opengl.dir/braco.cpp.obj: CMakeFiles/opengl.dir/flags.make
-CMakeFiles/opengl.dir/braco.cpp.obj: CMakeFiles/opengl.dir/includes_CXX.rsp
-CMakeFiles/opengl.dir/braco.cpp.obj: ../braco.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Viviane Alves\CLionProjects\opengl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/opengl.dir/braco.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\opengl.dir\braco.cpp.obj -c "C:\Users\Viviane Alves\CLionProjects\opengl\braco.cpp"
-
-CMakeFiles/opengl.dir/braco.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opengl.dir/braco.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Viviane Alves\CLionProjects\opengl\braco.cpp" > CMakeFiles\opengl.dir\braco.cpp.i
-
-CMakeFiles/opengl.dir/braco.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opengl.dir/braco.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Viviane Alves\CLionProjects\opengl\braco.cpp" -o CMakeFiles\opengl.dir\braco.cpp.s
-
-CMakeFiles/opengl.dir/moverEixo.cpp.obj: CMakeFiles/opengl.dir/flags.make
-CMakeFiles/opengl.dir/moverEixo.cpp.obj: CMakeFiles/opengl.dir/includes_CXX.rsp
-CMakeFiles/opengl.dir/moverEixo.cpp.obj: ../moverEixo.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Viviane Alves\CLionProjects\opengl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/opengl.dir/moverEixo.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\opengl.dir\moverEixo.cpp.obj -c "C:\Users\Viviane Alves\CLionProjects\opengl\moverEixo.cpp"
-
-CMakeFiles/opengl.dir/moverEixo.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opengl.dir/moverEixo.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Viviane Alves\CLionProjects\opengl\moverEixo.cpp" > CMakeFiles\opengl.dir\moverEixo.cpp.i
-
-CMakeFiles/opengl.dir/moverEixo.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opengl.dir/moverEixo.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Viviane Alves\CLionProjects\opengl\moverEixo.cpp" -o CMakeFiles\opengl.dir\moverEixo.cpp.s
-
-CMakeFiles/opengl.dir/mochila.cpp.obj: CMakeFiles/opengl.dir/flags.make
-CMakeFiles/opengl.dir/mochila.cpp.obj: CMakeFiles/opengl.dir/includes_CXX.rsp
-CMakeFiles/opengl.dir/mochila.cpp.obj: ../mochila.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Viviane Alves\CLionProjects\opengl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/opengl.dir/mochila.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\opengl.dir\mochila.cpp.obj -c "C:\Users\Viviane Alves\CLionProjects\opengl\mochila.cpp"
-
-CMakeFiles/opengl.dir/mochila.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opengl.dir/mochila.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Viviane Alves\CLionProjects\opengl\mochila.cpp" > CMakeFiles\opengl.dir\mochila.cpp.i
-
-CMakeFiles/opengl.dir/mochila.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opengl.dir/mochila.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Viviane Alves\CLionProjects\opengl\mochila.cpp" -o CMakeFiles\opengl.dir\mochila.cpp.s
-
-CMakeFiles/opengl.dir/mochila2.cpp.obj: CMakeFiles/opengl.dir/flags.make
-CMakeFiles/opengl.dir/mochila2.cpp.obj: CMakeFiles/opengl.dir/includes_CXX.rsp
-CMakeFiles/opengl.dir/mochila2.cpp.obj: ../mochila2.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Viviane Alves\CLionProjects\opengl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/opengl.dir/mochila2.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\opengl.dir\mochila2.cpp.obj -c "C:\Users\Viviane Alves\CLionProjects\opengl\mochila2.cpp"
-
-CMakeFiles/opengl.dir/mochila2.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opengl.dir/mochila2.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Viviane Alves\CLionProjects\opengl\mochila2.cpp" > CMakeFiles\opengl.dir\mochila2.cpp.i
-
-CMakeFiles/opengl.dir/mochila2.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opengl.dir/mochila2.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Viviane Alves\CLionProjects\opengl\mochila2.cpp" -o CMakeFiles\opengl.dir\mochila2.cpp.s
-
-CMakeFiles/opengl.dir/transform.cpp.obj: CMakeFiles/opengl.dir/flags.make
-CMakeFiles/opengl.dir/transform.cpp.obj: CMakeFiles/opengl.dir/includes_CXX.rsp
-CMakeFiles/opengl.dir/transform.cpp.obj: ../transform.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Viviane Alves\CLionProjects\opengl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/opengl.dir/transform.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\opengl.dir\transform.cpp.obj -c "C:\Users\Viviane Alves\CLionProjects\opengl\transform.cpp"
-
-CMakeFiles/opengl.dir/transform.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opengl.dir/transform.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Viviane Alves\CLionProjects\opengl\transform.cpp" > CMakeFiles\opengl.dir\transform.cpp.i
-
-CMakeFiles/opengl.dir/transform.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opengl.dir/transform.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Viviane Alves\CLionProjects\opengl\transform.cpp" -o CMakeFiles\opengl.dir\transform.cpp.s
-
-CMakeFiles/opengl.dir/cg2.cpp.obj: CMakeFiles/opengl.dir/flags.make
-CMakeFiles/opengl.dir/cg2.cpp.obj: CMakeFiles/opengl.dir/includes_CXX.rsp
-CMakeFiles/opengl.dir/cg2.cpp.obj: ../cg2.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Viviane Alves\CLionProjects\opengl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/opengl.dir/cg2.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\opengl.dir\cg2.cpp.obj -c "C:\Users\Viviane Alves\CLionProjects\opengl\cg2.cpp"
-
-CMakeFiles/opengl.dir/cg2.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opengl.dir/cg2.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Viviane Alves\CLionProjects\opengl\cg2.cpp" > CMakeFiles\opengl.dir\cg2.cpp.i
-
-CMakeFiles/opengl.dir/cg2.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opengl.dir/cg2.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Viviane Alves\CLionProjects\opengl\cg2.cpp" -o CMakeFiles\opengl.dir\cg2.cpp.s
-
-CMakeFiles/opengl.dir/cubo_3D.cpp.obj: CMakeFiles/opengl.dir/flags.make
-CMakeFiles/opengl.dir/cubo_3D.cpp.obj: CMakeFiles/opengl.dir/includes_CXX.rsp
-CMakeFiles/opengl.dir/cubo_3D.cpp.obj: ../cubo\ 3D.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Viviane Alves\CLionProjects\opengl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/opengl.dir/cubo_3D.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\opengl.dir\cubo_3D.cpp.obj -c "C:\Users\Viviane Alves\CLionProjects\opengl\cubo 3D.cpp"
-
-CMakeFiles/opengl.dir/cubo_3D.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opengl.dir/cubo_3D.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Viviane Alves\CLionProjects\opengl\cubo 3D.cpp" > CMakeFiles\opengl.dir\cubo_3D.cpp.i
-
-CMakeFiles/opengl.dir/cubo_3D.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opengl.dir/cubo_3D.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Viviane Alves\CLionProjects\opengl\cubo 3D.cpp" -o CMakeFiles\opengl.dir\cubo_3D.cpp.s
-
-CMakeFiles/opengl.dir/Exemplo3D.cpp.obj: CMakeFiles/opengl.dir/flags.make
-CMakeFiles/opengl.dir/Exemplo3D.cpp.obj: CMakeFiles/opengl.dir/includes_CXX.rsp
-CMakeFiles/opengl.dir/Exemplo3D.cpp.obj: ../Exemplo3D.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Viviane Alves\CLionProjects\opengl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/opengl.dir/Exemplo3D.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\opengl.dir\Exemplo3D.cpp.obj -c "C:\Users\Viviane Alves\CLionProjects\opengl\Exemplo3D.cpp"
-
-CMakeFiles/opengl.dir/Exemplo3D.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opengl.dir/Exemplo3D.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Viviane Alves\CLionProjects\opengl\Exemplo3D.cpp" > CMakeFiles\opengl.dir\Exemplo3D.cpp.i
-
-CMakeFiles/opengl.dir/Exemplo3D.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opengl.dir/Exemplo3D.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Viviane Alves\CLionProjects\opengl\Exemplo3D.cpp" -o CMakeFiles\opengl.dir\Exemplo3D.cpp.s
-
 CMakeFiles/opengl.dir/helloTeapot.cpp.obj: CMakeFiles/opengl.dir/flags.make
 CMakeFiles/opengl.dir/helloTeapot.cpp.obj: CMakeFiles/opengl.dir/includes_CXX.rsp
 CMakeFiles/opengl.dir/helloTeapot.cpp.obj: ../helloTeapot.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Viviane Alves\CLionProjects\opengl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/opengl.dir/helloTeapot.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Viviane Alves\CLionProjects\opengl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/opengl.dir/helloTeapot.cpp.obj"
 	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\opengl.dir\helloTeapot.cpp.obj -c "C:\Users\Viviane Alves\CLionProjects\opengl\helloTeapot.cpp"
 
 CMakeFiles/opengl.dir/helloTeapot.cpp.i: cmake_force
@@ -406,94 +350,10 @@ CMakeFiles/opengl.dir/helloTeapot.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opengl.dir/helloTeapot.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Viviane Alves\CLionProjects\opengl\helloTeapot.cpp" -o CMakeFiles\opengl.dir\helloTeapot.cpp.s
 
-CMakeFiles/opengl.dir/teapotsgalore.cpp.obj: CMakeFiles/opengl.dir/flags.make
-CMakeFiles/opengl.dir/teapotsgalore.cpp.obj: CMakeFiles/opengl.dir/includes_CXX.rsp
-CMakeFiles/opengl.dir/teapotsgalore.cpp.obj: ../teapotsgalore.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Viviane Alves\CLionProjects\opengl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/opengl.dir/teapotsgalore.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\opengl.dir\teapotsgalore.cpp.obj -c "C:\Users\Viviane Alves\CLionProjects\opengl\teapotsgalore.cpp"
-
-CMakeFiles/opengl.dir/teapotsgalore.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opengl.dir/teapotsgalore.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Viviane Alves\CLionProjects\opengl\teapotsgalore.cpp" > CMakeFiles\opengl.dir\teapotsgalore.cpp.i
-
-CMakeFiles/opengl.dir/teapotsgalore.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opengl.dir/teapotsgalore.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Viviane Alves\CLionProjects\opengl\teapotsgalore.cpp" -o CMakeFiles\opengl.dir\teapotsgalore.cpp.s
-
-CMakeFiles/opengl.dir/Teapot_Study.cpp.obj: CMakeFiles/opengl.dir/flags.make
-CMakeFiles/opengl.dir/Teapot_Study.cpp.obj: CMakeFiles/opengl.dir/includes_CXX.rsp
-CMakeFiles/opengl.dir/Teapot_Study.cpp.obj: ../Teapot\ Study.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Viviane Alves\CLionProjects\opengl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/opengl.dir/Teapot_Study.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\opengl.dir\Teapot_Study.cpp.obj -c "C:\Users\Viviane Alves\CLionProjects\opengl\Teapot Study.cpp"
-
-CMakeFiles/opengl.dir/Teapot_Study.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opengl.dir/Teapot_Study.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Viviane Alves\CLionProjects\opengl\Teapot Study.cpp" > CMakeFiles\opengl.dir\Teapot_Study.cpp.i
-
-CMakeFiles/opengl.dir/Teapot_Study.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opengl.dir/Teapot_Study.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Viviane Alves\CLionProjects\opengl\Teapot Study.cpp" -o CMakeFiles\opengl.dir\Teapot_Study.cpp.s
-
-CMakeFiles/opengl.dir/Modelagem_Mesa.cpp.obj: CMakeFiles/opengl.dir/flags.make
-CMakeFiles/opengl.dir/Modelagem_Mesa.cpp.obj: CMakeFiles/opengl.dir/includes_CXX.rsp
-CMakeFiles/opengl.dir/Modelagem_Mesa.cpp.obj: ../Modelagem\ Mesa.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Viviane Alves\CLionProjects\opengl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/opengl.dir/Modelagem_Mesa.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\opengl.dir\Modelagem_Mesa.cpp.obj -c "C:\Users\Viviane Alves\CLionProjects\opengl\Modelagem Mesa.cpp"
-
-CMakeFiles/opengl.dir/Modelagem_Mesa.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opengl.dir/Modelagem_Mesa.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Viviane Alves\CLionProjects\opengl\Modelagem Mesa.cpp" > CMakeFiles\opengl.dir\Modelagem_Mesa.cpp.i
-
-CMakeFiles/opengl.dir/Modelagem_Mesa.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opengl.dir/Modelagem_Mesa.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Viviane Alves\CLionProjects\opengl\Modelagem Mesa.cpp" -o CMakeFiles\opengl.dir\Modelagem_Mesa.cpp.s
-
-CMakeFiles/opengl.dir/aviao_de_papel.cpp.obj: CMakeFiles/opengl.dir/flags.make
-CMakeFiles/opengl.dir/aviao_de_papel.cpp.obj: CMakeFiles/opengl.dir/includes_CXX.rsp
-CMakeFiles/opengl.dir/aviao_de_papel.cpp.obj: ../aviao\ de\ papel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Viviane Alves\CLionProjects\opengl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/opengl.dir/aviao_de_papel.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\opengl.dir\aviao_de_papel.cpp.obj -c "C:\Users\Viviane Alves\CLionProjects\opengl\aviao de papel.cpp"
-
-CMakeFiles/opengl.dir/aviao_de_papel.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opengl.dir/aviao_de_papel.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Viviane Alves\CLionProjects\opengl\aviao de papel.cpp" > CMakeFiles\opengl.dir\aviao_de_papel.cpp.i
-
-CMakeFiles/opengl.dir/aviao_de_papel.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opengl.dir/aviao_de_papel.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Viviane Alves\CLionProjects\opengl\aviao de papel.cpp" -o CMakeFiles\opengl.dir\aviao_de_papel.cpp.s
-
-CMakeFiles/opengl.dir/linha.cpp.obj: CMakeFiles/opengl.dir/flags.make
-CMakeFiles/opengl.dir/linha.cpp.obj: CMakeFiles/opengl.dir/includes_CXX.rsp
-CMakeFiles/opengl.dir/linha.cpp.obj: ../linha.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Viviane Alves\CLionProjects\opengl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/opengl.dir/linha.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\opengl.dir\linha.cpp.obj -c "C:\Users\Viviane Alves\CLionProjects\opengl\linha.cpp"
-
-CMakeFiles/opengl.dir/linha.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opengl.dir/linha.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Viviane Alves\CLionProjects\opengl\linha.cpp" > CMakeFiles\opengl.dir\linha.cpp.i
-
-CMakeFiles/opengl.dir/linha.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opengl.dir/linha.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Viviane Alves\CLionProjects\opengl\linha.cpp" -o CMakeFiles\opengl.dir\linha.cpp.s
-
-CMakeFiles/opengl.dir/load.cpp.obj: CMakeFiles/opengl.dir/flags.make
-CMakeFiles/opengl.dir/load.cpp.obj: CMakeFiles/opengl.dir/includes_CXX.rsp
-CMakeFiles/opengl.dir/load.cpp.obj: ../load.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Viviane Alves\CLionProjects\opengl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/opengl.dir/load.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\opengl.dir\load.cpp.obj -c "C:\Users\Viviane Alves\CLionProjects\opengl\load.cpp"
-
-CMakeFiles/opengl.dir/load.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opengl.dir/load.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Viviane Alves\CLionProjects\opengl\load.cpp" > CMakeFiles\opengl.dir\load.cpp.i
-
-CMakeFiles/opengl.dir/load.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opengl.dir/load.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Viviane Alves\CLionProjects\opengl\load.cpp" -o CMakeFiles\opengl.dir\load.cpp.s
-
 CMakeFiles/opengl.dir/Cenario1.cpp.obj: CMakeFiles/opengl.dir/flags.make
 CMakeFiles/opengl.dir/Cenario1.cpp.obj: CMakeFiles/opengl.dir/includes_CXX.rsp
 CMakeFiles/opengl.dir/Cenario1.cpp.obj: ../Cenario1.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Viviane Alves\CLionProjects\opengl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/opengl.dir/Cenario1.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Viviane Alves\CLionProjects\opengl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/opengl.dir/Cenario1.cpp.obj"
 	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\opengl.dir\Cenario1.cpp.obj -c "C:\Users\Viviane Alves\CLionProjects\opengl\Cenario1.cpp"
 
 CMakeFiles/opengl.dir/Cenario1.cpp.i: cmake_force
@@ -504,38 +364,10 @@ CMakeFiles/opengl.dir/Cenario1.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opengl.dir/Cenario1.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Viviane Alves\CLionProjects\opengl\Cenario1.cpp" -o CMakeFiles\opengl.dir\Cenario1.cpp.s
 
-CMakeFiles/opengl.dir/lerBMP.cpp.obj: CMakeFiles/opengl.dir/flags.make
-CMakeFiles/opengl.dir/lerBMP.cpp.obj: CMakeFiles/opengl.dir/includes_CXX.rsp
-CMakeFiles/opengl.dir/lerBMP.cpp.obj: ../lerBMP.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Viviane Alves\CLionProjects\opengl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/opengl.dir/lerBMP.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\opengl.dir\lerBMP.cpp.obj -c "C:\Users\Viviane Alves\CLionProjects\opengl\lerBMP.cpp"
-
-CMakeFiles/opengl.dir/lerBMP.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opengl.dir/lerBMP.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Viviane Alves\CLionProjects\opengl\lerBMP.cpp" > CMakeFiles\opengl.dir\lerBMP.cpp.i
-
-CMakeFiles/opengl.dir/lerBMP.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opengl.dir/lerBMP.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Viviane Alves\CLionProjects\opengl\lerBMP.cpp" -o CMakeFiles\opengl.dir\lerBMP.cpp.s
-
-CMakeFiles/opengl.dir/other.cpp.obj: CMakeFiles/opengl.dir/flags.make
-CMakeFiles/opengl.dir/other.cpp.obj: CMakeFiles/opengl.dir/includes_CXX.rsp
-CMakeFiles/opengl.dir/other.cpp.obj: ../other.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Viviane Alves\CLionProjects\opengl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/opengl.dir/other.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\opengl.dir\other.cpp.obj -c "C:\Users\Viviane Alves\CLionProjects\opengl\other.cpp"
-
-CMakeFiles/opengl.dir/other.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opengl.dir/other.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Viviane Alves\CLionProjects\opengl\other.cpp" > CMakeFiles\opengl.dir\other.cpp.i
-
-CMakeFiles/opengl.dir/other.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opengl.dir/other.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Viviane Alves\CLionProjects\opengl\other.cpp" -o CMakeFiles\opengl.dir\other.cpp.s
-
 CMakeFiles/opengl.dir/textglaux.cpp.obj: CMakeFiles/opengl.dir/flags.make
 CMakeFiles/opengl.dir/textglaux.cpp.obj: CMakeFiles/opengl.dir/includes_CXX.rsp
 CMakeFiles/opengl.dir/textglaux.cpp.obj: ../textglaux.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Viviane Alves\CLionProjects\opengl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/opengl.dir/textglaux.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Viviane Alves\CLionProjects\opengl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/opengl.dir/textglaux.cpp.obj"
 	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\opengl.dir\textglaux.cpp.obj -c "C:\Users\Viviane Alves\CLionProjects\opengl\textglaux.cpp"
 
 CMakeFiles/opengl.dir/textglaux.cpp.i: cmake_force
@@ -549,7 +381,7 @@ CMakeFiles/opengl.dir/textglaux.cpp.s: cmake_force
 CMakeFiles/opengl.dir/carroTextura.cpp.obj: CMakeFiles/opengl.dir/flags.make
 CMakeFiles/opengl.dir/carroTextura.cpp.obj: CMakeFiles/opengl.dir/includes_CXX.rsp
 CMakeFiles/opengl.dir/carroTextura.cpp.obj: ../carroTextura.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Viviane Alves\CLionProjects\opengl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/opengl.dir/carroTextura.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Viviane Alves\CLionProjects\opengl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/opengl.dir/carroTextura.cpp.obj"
 	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\opengl.dir\carroTextura.cpp.obj -c "C:\Users\Viviane Alves\CLionProjects\opengl\carroTextura.cpp"
 
 CMakeFiles/opengl.dir/carroTextura.cpp.i: cmake_force
@@ -563,7 +395,7 @@ CMakeFiles/opengl.dir/carroTextura.cpp.s: cmake_force
 CMakeFiles/opengl.dir/lerObjetoTextura.c.obj: CMakeFiles/opengl.dir/flags.make
 CMakeFiles/opengl.dir/lerObjetoTextura.c.obj: CMakeFiles/opengl.dir/includes_C.rsp
 CMakeFiles/opengl.dir/lerObjetoTextura.c.obj: ../lerObjetoTextura.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Viviane Alves\CLionProjects\opengl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/opengl.dir/lerObjetoTextura.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Viviane Alves\CLionProjects\opengl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/opengl.dir/lerObjetoTextura.c.obj"
 	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\opengl.dir\lerObjetoTextura.c.obj   -c "C:\Users\Viviane Alves\CLionProjects\opengl\lerObjetoTextura.c"
 
 CMakeFiles/opengl.dir/lerObjetoTextura.c.i: cmake_force
@@ -574,92 +406,84 @@ CMakeFiles/opengl.dir/lerObjetoTextura.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/opengl.dir/lerObjetoTextura.c.s"
 	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Viviane Alves\CLionProjects\opengl\lerObjetoTextura.c" -o CMakeFiles\opengl.dir\lerObjetoTextura.c.s
 
+CMakeFiles/opengl.dir/luz.cpp.obj: CMakeFiles/opengl.dir/flags.make
+CMakeFiles/opengl.dir/luz.cpp.obj: CMakeFiles/opengl.dir/includes_CXX.rsp
+CMakeFiles/opengl.dir/luz.cpp.obj: ../luz.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Viviane Alves\CLionProjects\opengl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/opengl.dir/luz.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\opengl.dir\luz.cpp.obj -c "C:\Users\Viviane Alves\CLionProjects\opengl\luz.cpp"
+
+CMakeFiles/opengl.dir/luz.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opengl.dir/luz.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Viviane Alves\CLionProjects\opengl\luz.cpp" > CMakeFiles\opengl.dir\luz.cpp.i
+
+CMakeFiles/opengl.dir/luz.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opengl.dir/luz.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Viviane Alves\CLionProjects\opengl\luz.cpp" -o CMakeFiles\opengl.dir\luz.cpp.s
+
 # Object files for target opengl
 opengl_OBJECTS = \
-"CMakeFiles/opengl.dir/glm.c.obj" \
-"CMakeFiles/opengl.dir/lightposition.c.obj" \
-"CMakeFiles/opengl.dir/camera.cpp.obj" \
+"CMakeFiles/opengl.dir/teapotsgalore.cpp.obj" \
+"CMakeFiles/opengl.dir/trabalho2.cpp.obj" \
+"CMakeFiles/opengl.dir/teste.c.obj" \
+"CMakeFiles/opengl.dir/trackball.cpp.obj" \
+"CMakeFiles/opengl.dir/primitive.cpp.obj" \
+"CMakeFiles/opengl.dir/a2.cpp.obj" \
+"CMakeFiles/opengl.dir/AndroidBot_Main.c.obj" \
+"CMakeFiles/opengl.dir/AndroidBot_Activity.c.obj" \
+"CMakeFiles/opengl.dir/AndroidBot_Display.c.obj" \
+"CMakeFiles/opengl.dir/AndroidBot_Modeling.c.obj" \
+"CMakeFiles/opengl.dir/skating.cpp.obj" \
 "CMakeFiles/opengl.dir/main.cpp.obj" \
+"CMakeFiles/opengl.dir/glm.c.obj" \
+"CMakeFiles/opengl.dir/main1.cpp.obj" \
+"CMakeFiles/opengl.dir/Teapot_Study.cpp.obj" \
+"CMakeFiles/opengl.dir/lerBMP.cpp.obj" \
+"CMakeFiles/opengl.dir/lightposition.c.obj" \
+"CMakeFiles/opengl.dir/Camera.cpp.obj" \
 "CMakeFiles/opengl.dir/textures.cpp.obj" \
 "CMakeFiles/opengl.dir/e1_loadandprint.cpp.obj" \
-"CMakeFiles/opengl.dir/basic_shapes.cpp.obj" \
-"CMakeFiles/opengl.dir/janela.cpp.obj" \
-"CMakeFiles/opengl.dir/pc.cpp.obj" \
-"CMakeFiles/opengl.dir/casaFlat.cpp.obj" \
-"CMakeFiles/opengl.dir/casa.cpp.obj" \
-"CMakeFiles/opengl.dir/quadrado.cpp.obj" \
-"CMakeFiles/opengl.dir/teste.cpp.obj" \
-"CMakeFiles/opengl.dir/casaExer.cpp.obj" \
-"CMakeFiles/opengl.dir/escala.cpp.obj" \
-"CMakeFiles/opengl.dir/rotacao.cpp.obj" \
-"CMakeFiles/opengl.dir/braco.cpp.obj" \
-"CMakeFiles/opengl.dir/moverEixo.cpp.obj" \
-"CMakeFiles/opengl.dir/mochila.cpp.obj" \
-"CMakeFiles/opengl.dir/mochila2.cpp.obj" \
-"CMakeFiles/opengl.dir/transform.cpp.obj" \
-"CMakeFiles/opengl.dir/cg2.cpp.obj" \
-"CMakeFiles/opengl.dir/cubo_3D.cpp.obj" \
-"CMakeFiles/opengl.dir/Exemplo3D.cpp.obj" \
 "CMakeFiles/opengl.dir/helloTeapot.cpp.obj" \
-"CMakeFiles/opengl.dir/teapotsgalore.cpp.obj" \
-"CMakeFiles/opengl.dir/Teapot_Study.cpp.obj" \
-"CMakeFiles/opengl.dir/Modelagem_Mesa.cpp.obj" \
-"CMakeFiles/opengl.dir/aviao_de_papel.cpp.obj" \
-"CMakeFiles/opengl.dir/linha.cpp.obj" \
-"CMakeFiles/opengl.dir/load.cpp.obj" \
 "CMakeFiles/opengl.dir/Cenario1.cpp.obj" \
-"CMakeFiles/opengl.dir/lerBMP.cpp.obj" \
-"CMakeFiles/opengl.dir/other.cpp.obj" \
 "CMakeFiles/opengl.dir/textglaux.cpp.obj" \
 "CMakeFiles/opengl.dir/carroTextura.cpp.obj" \
-"CMakeFiles/opengl.dir/lerObjetoTextura.c.obj"
+"CMakeFiles/opengl.dir/lerObjetoTextura.c.obj" \
+"CMakeFiles/opengl.dir/luz.cpp.obj"
 
 # External object files for target opengl
 opengl_EXTERNAL_OBJECTS =
 
-opengl.exe: CMakeFiles/opengl.dir/glm.c.obj
-opengl.exe: CMakeFiles/opengl.dir/lightposition.c.obj
-opengl.exe: CMakeFiles/opengl.dir/camera.cpp.obj
+opengl.exe: CMakeFiles/opengl.dir/teapotsgalore.cpp.obj
+opengl.exe: CMakeFiles/opengl.dir/trabalho2.cpp.obj
+opengl.exe: CMakeFiles/opengl.dir/teste.c.obj
+opengl.exe: CMakeFiles/opengl.dir/trackball.cpp.obj
+opengl.exe: CMakeFiles/opengl.dir/primitive.cpp.obj
+opengl.exe: CMakeFiles/opengl.dir/a2.cpp.obj
+opengl.exe: CMakeFiles/opengl.dir/AndroidBot_Main.c.obj
+opengl.exe: CMakeFiles/opengl.dir/AndroidBot_Activity.c.obj
+opengl.exe: CMakeFiles/opengl.dir/AndroidBot_Display.c.obj
+opengl.exe: CMakeFiles/opengl.dir/AndroidBot_Modeling.c.obj
+opengl.exe: CMakeFiles/opengl.dir/skating.cpp.obj
 opengl.exe: CMakeFiles/opengl.dir/main.cpp.obj
+opengl.exe: CMakeFiles/opengl.dir/glm.c.obj
+opengl.exe: CMakeFiles/opengl.dir/main1.cpp.obj
+opengl.exe: CMakeFiles/opengl.dir/Teapot_Study.cpp.obj
+opengl.exe: CMakeFiles/opengl.dir/lerBMP.cpp.obj
+opengl.exe: CMakeFiles/opengl.dir/lightposition.c.obj
+opengl.exe: CMakeFiles/opengl.dir/Camera.cpp.obj
 opengl.exe: CMakeFiles/opengl.dir/textures.cpp.obj
 opengl.exe: CMakeFiles/opengl.dir/e1_loadandprint.cpp.obj
-opengl.exe: CMakeFiles/opengl.dir/basic_shapes.cpp.obj
-opengl.exe: CMakeFiles/opengl.dir/janela.cpp.obj
-opengl.exe: CMakeFiles/opengl.dir/pc.cpp.obj
-opengl.exe: CMakeFiles/opengl.dir/casaFlat.cpp.obj
-opengl.exe: CMakeFiles/opengl.dir/casa.cpp.obj
-opengl.exe: CMakeFiles/opengl.dir/quadrado.cpp.obj
-opengl.exe: CMakeFiles/opengl.dir/teste.cpp.obj
-opengl.exe: CMakeFiles/opengl.dir/casaExer.cpp.obj
-opengl.exe: CMakeFiles/opengl.dir/escala.cpp.obj
-opengl.exe: CMakeFiles/opengl.dir/rotacao.cpp.obj
-opengl.exe: CMakeFiles/opengl.dir/braco.cpp.obj
-opengl.exe: CMakeFiles/opengl.dir/moverEixo.cpp.obj
-opengl.exe: CMakeFiles/opengl.dir/mochila.cpp.obj
-opengl.exe: CMakeFiles/opengl.dir/mochila2.cpp.obj
-opengl.exe: CMakeFiles/opengl.dir/transform.cpp.obj
-opengl.exe: CMakeFiles/opengl.dir/cg2.cpp.obj
-opengl.exe: CMakeFiles/opengl.dir/cubo_3D.cpp.obj
-opengl.exe: CMakeFiles/opengl.dir/Exemplo3D.cpp.obj
 opengl.exe: CMakeFiles/opengl.dir/helloTeapot.cpp.obj
-opengl.exe: CMakeFiles/opengl.dir/teapotsgalore.cpp.obj
-opengl.exe: CMakeFiles/opengl.dir/Teapot_Study.cpp.obj
-opengl.exe: CMakeFiles/opengl.dir/Modelagem_Mesa.cpp.obj
-opengl.exe: CMakeFiles/opengl.dir/aviao_de_papel.cpp.obj
-opengl.exe: CMakeFiles/opengl.dir/linha.cpp.obj
-opengl.exe: CMakeFiles/opengl.dir/load.cpp.obj
 opengl.exe: CMakeFiles/opengl.dir/Cenario1.cpp.obj
-opengl.exe: CMakeFiles/opengl.dir/lerBMP.cpp.obj
-opengl.exe: CMakeFiles/opengl.dir/other.cpp.obj
 opengl.exe: CMakeFiles/opengl.dir/textglaux.cpp.obj
 opengl.exe: CMakeFiles/opengl.dir/carroTextura.cpp.obj
 opengl.exe: CMakeFiles/opengl.dir/lerObjetoTextura.c.obj
+opengl.exe: CMakeFiles/opengl.dir/luz.cpp.obj
 opengl.exe: CMakeFiles/opengl.dir/build.make
 opengl.exe: C:/MinGW/bin/glew32.dll
 opengl.exe: CMakeFiles/opengl.dir/linklibs.rsp
 opengl.exe: CMakeFiles/opengl.dir/objects1.rsp
 opengl.exe: CMakeFiles/opengl.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\Viviane Alves\CLionProjects\opengl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_38) "Linking CXX executable opengl.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\Viviane Alves\CLionProjects\opengl\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_27) "Linking CXX executable opengl.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\opengl.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -84,58 +84,49 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/AndroidBot_Activity.c">
+			<Option target="opengl"/>
+		</Unit>
+		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/AndroidBot_Activity.h">
+			<Option target="opengl"/>
+		</Unit>
+		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/AndroidBot_Display.c">
+			<Option target="opengl"/>
+		</Unit>
+		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/AndroidBot_Display.h">
+			<Option target="opengl"/>
+		</Unit>
+		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/AndroidBot_Main.c">
+			<Option target="opengl"/>
+		</Unit>
+		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/AndroidBot_Main.h">
+			<Option target="opengl"/>
+		</Unit>
+		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/AndroidBot_Modeling.c">
+			<Option target="opengl"/>
+		</Unit>
+		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/AndroidBot_Modeling.h">
+			<Option target="opengl"/>
+		</Unit>
+		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/Camera.cpp">
+			<Option target="opengl"/>
+		</Unit>
+		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/Camera.h">
+			<Option target="opengl"/>
+		</Unit>
 		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/Cenario1.cpp">
 			<Option target="opengl"/>
 		</Unit>
-		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/Exemplo3D.cpp">
+		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/Teapot_Study.cpp">
 			<Option target="opengl"/>
 		</Unit>
-		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/Modelagem Mesa.cpp">
-			<Option target="opengl"/>
-		</Unit>
-		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/Teapot Study.cpp">
-			<Option target="opengl"/>
-		</Unit>
-		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/aviao de papel.cpp">
-			<Option target="opengl"/>
-		</Unit>
-		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/banana.h">
-			<Option target="opengl"/>
-		</Unit>
-		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/basic_shapes.cpp">
-			<Option target="opengl"/>
-		</Unit>
-		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/braco.cpp">
-			<Option target="opengl"/>
-		</Unit>
-		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/camera.cpp">
-			<Option target="opengl"/>
-		</Unit>
-		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/camera.h">
+		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/a2.cpp">
 			<Option target="opengl"/>
 		</Unit>
 		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/carroTextura.cpp">
 			<Option target="opengl"/>
 		</Unit>
-		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/casa.cpp">
-			<Option target="opengl"/>
-		</Unit>
-		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/casaExer.cpp">
-			<Option target="opengl"/>
-		</Unit>
-		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/casaFlat.cpp">
-			<Option target="opengl"/>
-		</Unit>
-		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/cg2.cpp">
-			<Option target="opengl"/>
-		</Unit>
-		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/cubo 3D.cpp">
-			<Option target="opengl"/>
-		</Unit>
 		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/e1_loadandprint.cpp">
-			<Option target="opengl"/>
-		</Unit>
-		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/escala.cpp">
 			<Option target="opengl"/>
 		</Unit>
 		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/glm.c">
@@ -147,9 +138,6 @@
 		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/helloTeapot.cpp">
 			<Option target="opengl"/>
 		</Unit>
-		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/janela.cpp">
-			<Option target="opengl"/>
-		</Unit>
 		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/lerBMP.cpp">
 			<Option target="opengl"/>
 		</Unit>
@@ -159,40 +147,34 @@
 		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/lightposition.c">
 			<Option target="opengl"/>
 		</Unit>
-		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/linha.cpp">
-			<Option target="opengl"/>
-		</Unit>
-		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/load.cpp">
+		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/luz.cpp">
 			<Option target="opengl"/>
 		</Unit>
 		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/main.cpp">
 			<Option target="opengl"/>
 		</Unit>
-		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/mochila.cpp">
+		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/main.h">
 			<Option target="opengl"/>
 		</Unit>
-		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/mochila2.cpp">
+		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/main1.cpp">
 			<Option target="opengl"/>
 		</Unit>
-		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/moverEixo.cpp">
+		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/primitive.cpp">
 			<Option target="opengl"/>
 		</Unit>
-		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/other.cpp">
+		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/primitive.h">
 			<Option target="opengl"/>
 		</Unit>
-		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/pc.cpp">
+		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/skating.cpp">
 			<Option target="opengl"/>
 		</Unit>
-		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/quadrado.cpp">
-			<Option target="opengl"/>
-		</Unit>
-		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/rotacao.cpp">
+		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/skating.h">
 			<Option target="opengl"/>
 		</Unit>
 		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/teapotsgalore.cpp">
 			<Option target="opengl"/>
 		</Unit>
-		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/teste.cpp">
+		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/teste.c">
 			<Option target="opengl"/>
 		</Unit>
 		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/textglaux.cpp">
@@ -204,7 +186,16 @@
 		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/textures.h">
 			<Option target="opengl"/>
 		</Unit>
-		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/transform.cpp">
+		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/trabalho2.cpp">
+			<Option target="opengl"/>
+		</Unit>
+		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/trackball.cpp">
+			<Option target="opengl"/>
+		</Unit>
+		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/trackball.h">
+			<Option target="opengl"/>
+		</Unit>
+		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/wchar.h">
 			<Option target="opengl"/>
 		</Unit>
 		<Unit filename="C:/Users/Viviane Alves/CLionProjects/opengl/CMakeLists.txt">

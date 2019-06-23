@@ -38,10 +38,10 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Users\Viviane Alves\Documents\Clion\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Users\Viviane Alves\Documents\CLion-2018.3.4\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Users\Viviane Alves\Documents\Clion\bin\cmake\win\bin\cmake.exe" -E remove -f
+RM = "C:\Users\Viviane Alves\Documents\CLion-2018.3.4\bin\cmake\win\bin\cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -58,7 +58,7 @@ CMAKE_BINARY_DIR = "C:\Users\Viviane Alves\CLionProjects\opengl\cmake-build-debu
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"C:\Users\Viviane Alves\Documents\Clion\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"C:\Users\Viviane Alves\Documents\CLion-2018.3.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -69,7 +69,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"C:\Users\Viviane Alves\Documents\Clion\bin\cmake\win\bin\cmake.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"C:\Users\Viviane Alves\Documents\CLion-2018.3.4\bin\cmake\win\bin\cmake.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -122,6 +122,141 @@ opengl/fast:
 	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/build
 .PHONY : opengl/fast
 
+AndroidBot_Activity.obj: AndroidBot_Activity.c.obj
+
+.PHONY : AndroidBot_Activity.obj
+
+# target to build an object file
+AndroidBot_Activity.c.obj:
+	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/AndroidBot_Activity.c.obj
+.PHONY : AndroidBot_Activity.c.obj
+
+AndroidBot_Activity.i: AndroidBot_Activity.c.i
+
+.PHONY : AndroidBot_Activity.i
+
+# target to preprocess a source file
+AndroidBot_Activity.c.i:
+	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/AndroidBot_Activity.c.i
+.PHONY : AndroidBot_Activity.c.i
+
+AndroidBot_Activity.s: AndroidBot_Activity.c.s
+
+.PHONY : AndroidBot_Activity.s
+
+# target to generate assembly for a file
+AndroidBot_Activity.c.s:
+	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/AndroidBot_Activity.c.s
+.PHONY : AndroidBot_Activity.c.s
+
+AndroidBot_Display.obj: AndroidBot_Display.c.obj
+
+.PHONY : AndroidBot_Display.obj
+
+# target to build an object file
+AndroidBot_Display.c.obj:
+	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/AndroidBot_Display.c.obj
+.PHONY : AndroidBot_Display.c.obj
+
+AndroidBot_Display.i: AndroidBot_Display.c.i
+
+.PHONY : AndroidBot_Display.i
+
+# target to preprocess a source file
+AndroidBot_Display.c.i:
+	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/AndroidBot_Display.c.i
+.PHONY : AndroidBot_Display.c.i
+
+AndroidBot_Display.s: AndroidBot_Display.c.s
+
+.PHONY : AndroidBot_Display.s
+
+# target to generate assembly for a file
+AndroidBot_Display.c.s:
+	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/AndroidBot_Display.c.s
+.PHONY : AndroidBot_Display.c.s
+
+AndroidBot_Main.obj: AndroidBot_Main.c.obj
+
+.PHONY : AndroidBot_Main.obj
+
+# target to build an object file
+AndroidBot_Main.c.obj:
+	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/AndroidBot_Main.c.obj
+.PHONY : AndroidBot_Main.c.obj
+
+AndroidBot_Main.i: AndroidBot_Main.c.i
+
+.PHONY : AndroidBot_Main.i
+
+# target to preprocess a source file
+AndroidBot_Main.c.i:
+	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/AndroidBot_Main.c.i
+.PHONY : AndroidBot_Main.c.i
+
+AndroidBot_Main.s: AndroidBot_Main.c.s
+
+.PHONY : AndroidBot_Main.s
+
+# target to generate assembly for a file
+AndroidBot_Main.c.s:
+	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/AndroidBot_Main.c.s
+.PHONY : AndroidBot_Main.c.s
+
+AndroidBot_Modeling.obj: AndroidBot_Modeling.c.obj
+
+.PHONY : AndroidBot_Modeling.obj
+
+# target to build an object file
+AndroidBot_Modeling.c.obj:
+	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/AndroidBot_Modeling.c.obj
+.PHONY : AndroidBot_Modeling.c.obj
+
+AndroidBot_Modeling.i: AndroidBot_Modeling.c.i
+
+.PHONY : AndroidBot_Modeling.i
+
+# target to preprocess a source file
+AndroidBot_Modeling.c.i:
+	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/AndroidBot_Modeling.c.i
+.PHONY : AndroidBot_Modeling.c.i
+
+AndroidBot_Modeling.s: AndroidBot_Modeling.c.s
+
+.PHONY : AndroidBot_Modeling.s
+
+# target to generate assembly for a file
+AndroidBot_Modeling.c.s:
+	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/AndroidBot_Modeling.c.s
+.PHONY : AndroidBot_Modeling.c.s
+
+Camera.obj: Camera.cpp.obj
+
+.PHONY : Camera.obj
+
+# target to build an object file
+Camera.cpp.obj:
+	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/Camera.cpp.obj
+.PHONY : Camera.cpp.obj
+
+Camera.i: Camera.cpp.i
+
+.PHONY : Camera.i
+
+# target to preprocess a source file
+Camera.cpp.i:
+	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/Camera.cpp.i
+.PHONY : Camera.cpp.i
+
+Camera.s: Camera.cpp.s
+
+.PHONY : Camera.s
+
+# target to generate assembly for a file
+Camera.cpp.s:
+	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/Camera.cpp.s
+.PHONY : Camera.cpp.s
+
 Cenario1.obj: Cenario1.cpp.obj
 
 .PHONY : Cenario1.obj
@@ -148,60 +283,6 @@ Cenario1.s: Cenario1.cpp.s
 Cenario1.cpp.s:
 	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/Cenario1.cpp.s
 .PHONY : Cenario1.cpp.s
-
-Exemplo3D.obj: Exemplo3D.cpp.obj
-
-.PHONY : Exemplo3D.obj
-
-# target to build an object file
-Exemplo3D.cpp.obj:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/Exemplo3D.cpp.obj
-.PHONY : Exemplo3D.cpp.obj
-
-Exemplo3D.i: Exemplo3D.cpp.i
-
-.PHONY : Exemplo3D.i
-
-# target to preprocess a source file
-Exemplo3D.cpp.i:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/Exemplo3D.cpp.i
-.PHONY : Exemplo3D.cpp.i
-
-Exemplo3D.s: Exemplo3D.cpp.s
-
-.PHONY : Exemplo3D.s
-
-# target to generate assembly for a file
-Exemplo3D.cpp.s:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/Exemplo3D.cpp.s
-.PHONY : Exemplo3D.cpp.s
-
-Modelagem_Mesa.obj: Modelagem_Mesa.cpp.obj
-
-.PHONY : Modelagem_Mesa.obj
-
-# target to build an object file
-Modelagem_Mesa.cpp.obj:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/Modelagem_Mesa.cpp.obj
-.PHONY : Modelagem_Mesa.cpp.obj
-
-Modelagem_Mesa.i: Modelagem_Mesa.cpp.i
-
-.PHONY : Modelagem_Mesa.i
-
-# target to preprocess a source file
-Modelagem_Mesa.cpp.i:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/Modelagem_Mesa.cpp.i
-.PHONY : Modelagem_Mesa.cpp.i
-
-Modelagem_Mesa.s: Modelagem_Mesa.cpp.s
-
-.PHONY : Modelagem_Mesa.s
-
-# target to generate assembly for a file
-Modelagem_Mesa.cpp.s:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/Modelagem_Mesa.cpp.s
-.PHONY : Modelagem_Mesa.cpp.s
 
 Teapot_Study.obj: Teapot_Study.cpp.obj
 
@@ -230,113 +311,32 @@ Teapot_Study.cpp.s:
 	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/Teapot_Study.cpp.s
 .PHONY : Teapot_Study.cpp.s
 
-aviao_de_papel.obj: aviao_de_papel.cpp.obj
+a2.obj: a2.cpp.obj
 
-.PHONY : aviao_de_papel.obj
-
-# target to build an object file
-aviao_de_papel.cpp.obj:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/aviao_de_papel.cpp.obj
-.PHONY : aviao_de_papel.cpp.obj
-
-aviao_de_papel.i: aviao_de_papel.cpp.i
-
-.PHONY : aviao_de_papel.i
-
-# target to preprocess a source file
-aviao_de_papel.cpp.i:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/aviao_de_papel.cpp.i
-.PHONY : aviao_de_papel.cpp.i
-
-aviao_de_papel.s: aviao_de_papel.cpp.s
-
-.PHONY : aviao_de_papel.s
-
-# target to generate assembly for a file
-aviao_de_papel.cpp.s:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/aviao_de_papel.cpp.s
-.PHONY : aviao_de_papel.cpp.s
-
-basic_shapes.obj: basic_shapes.cpp.obj
-
-.PHONY : basic_shapes.obj
+.PHONY : a2.obj
 
 # target to build an object file
-basic_shapes.cpp.obj:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/basic_shapes.cpp.obj
-.PHONY : basic_shapes.cpp.obj
+a2.cpp.obj:
+	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/a2.cpp.obj
+.PHONY : a2.cpp.obj
 
-basic_shapes.i: basic_shapes.cpp.i
+a2.i: a2.cpp.i
 
-.PHONY : basic_shapes.i
-
-# target to preprocess a source file
-basic_shapes.cpp.i:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/basic_shapes.cpp.i
-.PHONY : basic_shapes.cpp.i
-
-basic_shapes.s: basic_shapes.cpp.s
-
-.PHONY : basic_shapes.s
-
-# target to generate assembly for a file
-basic_shapes.cpp.s:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/basic_shapes.cpp.s
-.PHONY : basic_shapes.cpp.s
-
-braco.obj: braco.cpp.obj
-
-.PHONY : braco.obj
-
-# target to build an object file
-braco.cpp.obj:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/braco.cpp.obj
-.PHONY : braco.cpp.obj
-
-braco.i: braco.cpp.i
-
-.PHONY : braco.i
+.PHONY : a2.i
 
 # target to preprocess a source file
-braco.cpp.i:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/braco.cpp.i
-.PHONY : braco.cpp.i
+a2.cpp.i:
+	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/a2.cpp.i
+.PHONY : a2.cpp.i
 
-braco.s: braco.cpp.s
+a2.s: a2.cpp.s
 
-.PHONY : braco.s
-
-# target to generate assembly for a file
-braco.cpp.s:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/braco.cpp.s
-.PHONY : braco.cpp.s
-
-camera.obj: camera.cpp.obj
-
-.PHONY : camera.obj
-
-# target to build an object file
-camera.cpp.obj:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/camera.cpp.obj
-.PHONY : camera.cpp.obj
-
-camera.i: camera.cpp.i
-
-.PHONY : camera.i
-
-# target to preprocess a source file
-camera.cpp.i:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/camera.cpp.i
-.PHONY : camera.cpp.i
-
-camera.s: camera.cpp.s
-
-.PHONY : camera.s
+.PHONY : a2.s
 
 # target to generate assembly for a file
-camera.cpp.s:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/camera.cpp.s
-.PHONY : camera.cpp.s
+a2.cpp.s:
+	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/a2.cpp.s
+.PHONY : a2.cpp.s
 
 carroTextura.obj: carroTextura.cpp.obj
 
@@ -365,141 +365,6 @@ carroTextura.cpp.s:
 	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/carroTextura.cpp.s
 .PHONY : carroTextura.cpp.s
 
-casa.obj: casa.cpp.obj
-
-.PHONY : casa.obj
-
-# target to build an object file
-casa.cpp.obj:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/casa.cpp.obj
-.PHONY : casa.cpp.obj
-
-casa.i: casa.cpp.i
-
-.PHONY : casa.i
-
-# target to preprocess a source file
-casa.cpp.i:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/casa.cpp.i
-.PHONY : casa.cpp.i
-
-casa.s: casa.cpp.s
-
-.PHONY : casa.s
-
-# target to generate assembly for a file
-casa.cpp.s:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/casa.cpp.s
-.PHONY : casa.cpp.s
-
-casaExer.obj: casaExer.cpp.obj
-
-.PHONY : casaExer.obj
-
-# target to build an object file
-casaExer.cpp.obj:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/casaExer.cpp.obj
-.PHONY : casaExer.cpp.obj
-
-casaExer.i: casaExer.cpp.i
-
-.PHONY : casaExer.i
-
-# target to preprocess a source file
-casaExer.cpp.i:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/casaExer.cpp.i
-.PHONY : casaExer.cpp.i
-
-casaExer.s: casaExer.cpp.s
-
-.PHONY : casaExer.s
-
-# target to generate assembly for a file
-casaExer.cpp.s:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/casaExer.cpp.s
-.PHONY : casaExer.cpp.s
-
-casaFlat.obj: casaFlat.cpp.obj
-
-.PHONY : casaFlat.obj
-
-# target to build an object file
-casaFlat.cpp.obj:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/casaFlat.cpp.obj
-.PHONY : casaFlat.cpp.obj
-
-casaFlat.i: casaFlat.cpp.i
-
-.PHONY : casaFlat.i
-
-# target to preprocess a source file
-casaFlat.cpp.i:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/casaFlat.cpp.i
-.PHONY : casaFlat.cpp.i
-
-casaFlat.s: casaFlat.cpp.s
-
-.PHONY : casaFlat.s
-
-# target to generate assembly for a file
-casaFlat.cpp.s:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/casaFlat.cpp.s
-.PHONY : casaFlat.cpp.s
-
-cg2.obj: cg2.cpp.obj
-
-.PHONY : cg2.obj
-
-# target to build an object file
-cg2.cpp.obj:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/cg2.cpp.obj
-.PHONY : cg2.cpp.obj
-
-cg2.i: cg2.cpp.i
-
-.PHONY : cg2.i
-
-# target to preprocess a source file
-cg2.cpp.i:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/cg2.cpp.i
-.PHONY : cg2.cpp.i
-
-cg2.s: cg2.cpp.s
-
-.PHONY : cg2.s
-
-# target to generate assembly for a file
-cg2.cpp.s:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/cg2.cpp.s
-.PHONY : cg2.cpp.s
-
-cubo_3D.obj: cubo_3D.cpp.obj
-
-.PHONY : cubo_3D.obj
-
-# target to build an object file
-cubo_3D.cpp.obj:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/cubo_3D.cpp.obj
-.PHONY : cubo_3D.cpp.obj
-
-cubo_3D.i: cubo_3D.cpp.i
-
-.PHONY : cubo_3D.i
-
-# target to preprocess a source file
-cubo_3D.cpp.i:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/cubo_3D.cpp.i
-.PHONY : cubo_3D.cpp.i
-
-cubo_3D.s: cubo_3D.cpp.s
-
-.PHONY : cubo_3D.s
-
-# target to generate assembly for a file
-cubo_3D.cpp.s:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/cubo_3D.cpp.s
-.PHONY : cubo_3D.cpp.s
-
 e1_loadandprint.obj: e1_loadandprint.cpp.obj
 
 .PHONY : e1_loadandprint.obj
@@ -526,33 +391,6 @@ e1_loadandprint.s: e1_loadandprint.cpp.s
 e1_loadandprint.cpp.s:
 	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/e1_loadandprint.cpp.s
 .PHONY : e1_loadandprint.cpp.s
-
-escala.obj: escala.cpp.obj
-
-.PHONY : escala.obj
-
-# target to build an object file
-escala.cpp.obj:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/escala.cpp.obj
-.PHONY : escala.cpp.obj
-
-escala.i: escala.cpp.i
-
-.PHONY : escala.i
-
-# target to preprocess a source file
-escala.cpp.i:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/escala.cpp.i
-.PHONY : escala.cpp.i
-
-escala.s: escala.cpp.s
-
-.PHONY : escala.s
-
-# target to generate assembly for a file
-escala.cpp.s:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/escala.cpp.s
-.PHONY : escala.cpp.s
 
 glm.obj: glm.c.obj
 
@@ -607,33 +445,6 @@ helloTeapot.s: helloTeapot.cpp.s
 helloTeapot.cpp.s:
 	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/helloTeapot.cpp.s
 .PHONY : helloTeapot.cpp.s
-
-janela.obj: janela.cpp.obj
-
-.PHONY : janela.obj
-
-# target to build an object file
-janela.cpp.obj:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/janela.cpp.obj
-.PHONY : janela.cpp.obj
-
-janela.i: janela.cpp.i
-
-.PHONY : janela.i
-
-# target to preprocess a source file
-janela.cpp.i:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/janela.cpp.i
-.PHONY : janela.cpp.i
-
-janela.s: janela.cpp.s
-
-.PHONY : janela.s
-
-# target to generate assembly for a file
-janela.cpp.s:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/janela.cpp.s
-.PHONY : janela.cpp.s
 
 lerBMP.obj: lerBMP.cpp.obj
 
@@ -716,59 +527,32 @@ lightposition.c.s:
 	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/lightposition.c.s
 .PHONY : lightposition.c.s
 
-linha.obj: linha.cpp.obj
+luz.obj: luz.cpp.obj
 
-.PHONY : linha.obj
-
-# target to build an object file
-linha.cpp.obj:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/linha.cpp.obj
-.PHONY : linha.cpp.obj
-
-linha.i: linha.cpp.i
-
-.PHONY : linha.i
-
-# target to preprocess a source file
-linha.cpp.i:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/linha.cpp.i
-.PHONY : linha.cpp.i
-
-linha.s: linha.cpp.s
-
-.PHONY : linha.s
-
-# target to generate assembly for a file
-linha.cpp.s:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/linha.cpp.s
-.PHONY : linha.cpp.s
-
-load.obj: load.cpp.obj
-
-.PHONY : load.obj
+.PHONY : luz.obj
 
 # target to build an object file
-load.cpp.obj:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/load.cpp.obj
-.PHONY : load.cpp.obj
+luz.cpp.obj:
+	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/luz.cpp.obj
+.PHONY : luz.cpp.obj
 
-load.i: load.cpp.i
+luz.i: luz.cpp.i
 
-.PHONY : load.i
+.PHONY : luz.i
 
 # target to preprocess a source file
-load.cpp.i:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/load.cpp.i
-.PHONY : load.cpp.i
+luz.cpp.i:
+	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/luz.cpp.i
+.PHONY : luz.cpp.i
 
-load.s: load.cpp.s
+luz.s: luz.cpp.s
 
-.PHONY : load.s
+.PHONY : luz.s
 
 # target to generate assembly for a file
-load.cpp.s:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/load.cpp.s
-.PHONY : load.cpp.s
+luz.cpp.s:
+	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/luz.cpp.s
+.PHONY : luz.cpp.s
 
 main.obj: main.cpp.obj
 
@@ -797,194 +581,86 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-mochila.obj: mochila.cpp.obj
+main1.obj: main1.cpp.obj
 
-.PHONY : mochila.obj
-
-# target to build an object file
-mochila.cpp.obj:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/mochila.cpp.obj
-.PHONY : mochila.cpp.obj
-
-mochila.i: mochila.cpp.i
-
-.PHONY : mochila.i
-
-# target to preprocess a source file
-mochila.cpp.i:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/mochila.cpp.i
-.PHONY : mochila.cpp.i
-
-mochila.s: mochila.cpp.s
-
-.PHONY : mochila.s
-
-# target to generate assembly for a file
-mochila.cpp.s:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/mochila.cpp.s
-.PHONY : mochila.cpp.s
-
-mochila2.obj: mochila2.cpp.obj
-
-.PHONY : mochila2.obj
+.PHONY : main1.obj
 
 # target to build an object file
-mochila2.cpp.obj:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/mochila2.cpp.obj
-.PHONY : mochila2.cpp.obj
+main1.cpp.obj:
+	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/main1.cpp.obj
+.PHONY : main1.cpp.obj
 
-mochila2.i: mochila2.cpp.i
+main1.i: main1.cpp.i
 
-.PHONY : mochila2.i
+.PHONY : main1.i
 
 # target to preprocess a source file
-mochila2.cpp.i:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/mochila2.cpp.i
-.PHONY : mochila2.cpp.i
+main1.cpp.i:
+	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/main1.cpp.i
+.PHONY : main1.cpp.i
 
-mochila2.s: mochila2.cpp.s
+main1.s: main1.cpp.s
 
-.PHONY : mochila2.s
+.PHONY : main1.s
 
 # target to generate assembly for a file
-mochila2.cpp.s:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/mochila2.cpp.s
-.PHONY : mochila2.cpp.s
+main1.cpp.s:
+	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/main1.cpp.s
+.PHONY : main1.cpp.s
 
-moverEixo.obj: moverEixo.cpp.obj
+primitive.obj: primitive.cpp.obj
 
-.PHONY : moverEixo.obj
+.PHONY : primitive.obj
 
 # target to build an object file
-moverEixo.cpp.obj:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/moverEixo.cpp.obj
-.PHONY : moverEixo.cpp.obj
+primitive.cpp.obj:
+	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/primitive.cpp.obj
+.PHONY : primitive.cpp.obj
 
-moverEixo.i: moverEixo.cpp.i
+primitive.i: primitive.cpp.i
 
-.PHONY : moverEixo.i
+.PHONY : primitive.i
 
 # target to preprocess a source file
-moverEixo.cpp.i:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/moverEixo.cpp.i
-.PHONY : moverEixo.cpp.i
+primitive.cpp.i:
+	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/primitive.cpp.i
+.PHONY : primitive.cpp.i
 
-moverEixo.s: moverEixo.cpp.s
+primitive.s: primitive.cpp.s
 
-.PHONY : moverEixo.s
+.PHONY : primitive.s
 
 # target to generate assembly for a file
-moverEixo.cpp.s:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/moverEixo.cpp.s
-.PHONY : moverEixo.cpp.s
+primitive.cpp.s:
+	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/primitive.cpp.s
+.PHONY : primitive.cpp.s
 
-other.obj: other.cpp.obj
+skating.obj: skating.cpp.obj
 
-.PHONY : other.obj
+.PHONY : skating.obj
 
 # target to build an object file
-other.cpp.obj:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/other.cpp.obj
-.PHONY : other.cpp.obj
+skating.cpp.obj:
+	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/skating.cpp.obj
+.PHONY : skating.cpp.obj
 
-other.i: other.cpp.i
+skating.i: skating.cpp.i
 
-.PHONY : other.i
-
-# target to preprocess a source file
-other.cpp.i:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/other.cpp.i
-.PHONY : other.cpp.i
-
-other.s: other.cpp.s
-
-.PHONY : other.s
-
-# target to generate assembly for a file
-other.cpp.s:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/other.cpp.s
-.PHONY : other.cpp.s
-
-pc.obj: pc.cpp.obj
-
-.PHONY : pc.obj
-
-# target to build an object file
-pc.cpp.obj:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/pc.cpp.obj
-.PHONY : pc.cpp.obj
-
-pc.i: pc.cpp.i
-
-.PHONY : pc.i
+.PHONY : skating.i
 
 # target to preprocess a source file
-pc.cpp.i:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/pc.cpp.i
-.PHONY : pc.cpp.i
+skating.cpp.i:
+	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/skating.cpp.i
+.PHONY : skating.cpp.i
 
-pc.s: pc.cpp.s
+skating.s: skating.cpp.s
 
-.PHONY : pc.s
-
-# target to generate assembly for a file
-pc.cpp.s:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/pc.cpp.s
-.PHONY : pc.cpp.s
-
-quadrado.obj: quadrado.cpp.obj
-
-.PHONY : quadrado.obj
-
-# target to build an object file
-quadrado.cpp.obj:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/quadrado.cpp.obj
-.PHONY : quadrado.cpp.obj
-
-quadrado.i: quadrado.cpp.i
-
-.PHONY : quadrado.i
-
-# target to preprocess a source file
-quadrado.cpp.i:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/quadrado.cpp.i
-.PHONY : quadrado.cpp.i
-
-quadrado.s: quadrado.cpp.s
-
-.PHONY : quadrado.s
+.PHONY : skating.s
 
 # target to generate assembly for a file
-quadrado.cpp.s:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/quadrado.cpp.s
-.PHONY : quadrado.cpp.s
-
-rotacao.obj: rotacao.cpp.obj
-
-.PHONY : rotacao.obj
-
-# target to build an object file
-rotacao.cpp.obj:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/rotacao.cpp.obj
-.PHONY : rotacao.cpp.obj
-
-rotacao.i: rotacao.cpp.i
-
-.PHONY : rotacao.i
-
-# target to preprocess a source file
-rotacao.cpp.i:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/rotacao.cpp.i
-.PHONY : rotacao.cpp.i
-
-rotacao.s: rotacao.cpp.s
-
-.PHONY : rotacao.s
-
-# target to generate assembly for a file
-rotacao.cpp.s:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/rotacao.cpp.s
-.PHONY : rotacao.cpp.s
+skating.cpp.s:
+	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/skating.cpp.s
+.PHONY : skating.cpp.s
 
 teapotsgalore.obj: teapotsgalore.cpp.obj
 
@@ -1013,32 +689,32 @@ teapotsgalore.cpp.s:
 	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/teapotsgalore.cpp.s
 .PHONY : teapotsgalore.cpp.s
 
-teste.obj: teste.cpp.obj
+teste.obj: teste.c.obj
 
 .PHONY : teste.obj
 
 # target to build an object file
-teste.cpp.obj:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/teste.cpp.obj
-.PHONY : teste.cpp.obj
+teste.c.obj:
+	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/teste.c.obj
+.PHONY : teste.c.obj
 
-teste.i: teste.cpp.i
+teste.i: teste.c.i
 
 .PHONY : teste.i
 
 # target to preprocess a source file
-teste.cpp.i:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/teste.cpp.i
-.PHONY : teste.cpp.i
+teste.c.i:
+	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/teste.c.i
+.PHONY : teste.c.i
 
-teste.s: teste.cpp.s
+teste.s: teste.c.s
 
 .PHONY : teste.s
 
 # target to generate assembly for a file
-teste.cpp.s:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/teste.cpp.s
-.PHONY : teste.cpp.s
+teste.c.s:
+	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/teste.c.s
+.PHONY : teste.c.s
 
 textglaux.obj: textglaux.cpp.obj
 
@@ -1094,32 +770,59 @@ textures.cpp.s:
 	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/textures.cpp.s
 .PHONY : textures.cpp.s
 
-transform.obj: transform.cpp.obj
+trabalho2.obj: trabalho2.cpp.obj
 
-.PHONY : transform.obj
+.PHONY : trabalho2.obj
 
 # target to build an object file
-transform.cpp.obj:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/transform.cpp.obj
-.PHONY : transform.cpp.obj
+trabalho2.cpp.obj:
+	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/trabalho2.cpp.obj
+.PHONY : trabalho2.cpp.obj
 
-transform.i: transform.cpp.i
+trabalho2.i: trabalho2.cpp.i
 
-.PHONY : transform.i
+.PHONY : trabalho2.i
 
 # target to preprocess a source file
-transform.cpp.i:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/transform.cpp.i
-.PHONY : transform.cpp.i
+trabalho2.cpp.i:
+	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/trabalho2.cpp.i
+.PHONY : trabalho2.cpp.i
 
-transform.s: transform.cpp.s
+trabalho2.s: trabalho2.cpp.s
 
-.PHONY : transform.s
+.PHONY : trabalho2.s
 
 # target to generate assembly for a file
-transform.cpp.s:
-	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/transform.cpp.s
-.PHONY : transform.cpp.s
+trabalho2.cpp.s:
+	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/trabalho2.cpp.s
+.PHONY : trabalho2.cpp.s
+
+trackball.obj: trackball.cpp.obj
+
+.PHONY : trackball.obj
+
+# target to build an object file
+trackball.cpp.obj:
+	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/trackball.cpp.obj
+.PHONY : trackball.cpp.obj
+
+trackball.i: trackball.cpp.i
+
+.PHONY : trackball.i
+
+# target to preprocess a source file
+trackball.cpp.i:
+	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/trackball.cpp.i
+.PHONY : trackball.cpp.i
+
+trackball.s: trackball.cpp.s
+
+.PHONY : trackball.s
+
+# target to generate assembly for a file
+trackball.cpp.s:
+	$(MAKE) -f CMakeFiles\opengl.dir\build.make CMakeFiles/opengl.dir/trackball.cpp.s
+.PHONY : trackball.cpp.s
 
 # Help Target
 help:
@@ -1130,63 +833,42 @@ help:
 	@echo ... opengl
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... AndroidBot_Activity.obj
+	@echo ... AndroidBot_Activity.i
+	@echo ... AndroidBot_Activity.s
+	@echo ... AndroidBot_Display.obj
+	@echo ... AndroidBot_Display.i
+	@echo ... AndroidBot_Display.s
+	@echo ... AndroidBot_Main.obj
+	@echo ... AndroidBot_Main.i
+	@echo ... AndroidBot_Main.s
+	@echo ... AndroidBot_Modeling.obj
+	@echo ... AndroidBot_Modeling.i
+	@echo ... AndroidBot_Modeling.s
+	@echo ... Camera.obj
+	@echo ... Camera.i
+	@echo ... Camera.s
 	@echo ... Cenario1.obj
 	@echo ... Cenario1.i
 	@echo ... Cenario1.s
-	@echo ... Exemplo3D.obj
-	@echo ... Exemplo3D.i
-	@echo ... Exemplo3D.s
-	@echo ... Modelagem_Mesa.obj
-	@echo ... Modelagem_Mesa.i
-	@echo ... Modelagem_Mesa.s
 	@echo ... Teapot_Study.obj
 	@echo ... Teapot_Study.i
 	@echo ... Teapot_Study.s
-	@echo ... aviao_de_papel.obj
-	@echo ... aviao_de_papel.i
-	@echo ... aviao_de_papel.s
-	@echo ... basic_shapes.obj
-	@echo ... basic_shapes.i
-	@echo ... basic_shapes.s
-	@echo ... braco.obj
-	@echo ... braco.i
-	@echo ... braco.s
-	@echo ... camera.obj
-	@echo ... camera.i
-	@echo ... camera.s
+	@echo ... a2.obj
+	@echo ... a2.i
+	@echo ... a2.s
 	@echo ... carroTextura.obj
 	@echo ... carroTextura.i
 	@echo ... carroTextura.s
-	@echo ... casa.obj
-	@echo ... casa.i
-	@echo ... casa.s
-	@echo ... casaExer.obj
-	@echo ... casaExer.i
-	@echo ... casaExer.s
-	@echo ... casaFlat.obj
-	@echo ... casaFlat.i
-	@echo ... casaFlat.s
-	@echo ... cg2.obj
-	@echo ... cg2.i
-	@echo ... cg2.s
-	@echo ... cubo_3D.obj
-	@echo ... cubo_3D.i
-	@echo ... cubo_3D.s
 	@echo ... e1_loadandprint.obj
 	@echo ... e1_loadandprint.i
 	@echo ... e1_loadandprint.s
-	@echo ... escala.obj
-	@echo ... escala.i
-	@echo ... escala.s
 	@echo ... glm.obj
 	@echo ... glm.i
 	@echo ... glm.s
 	@echo ... helloTeapot.obj
 	@echo ... helloTeapot.i
 	@echo ... helloTeapot.s
-	@echo ... janela.obj
-	@echo ... janela.i
-	@echo ... janela.s
 	@echo ... lerBMP.obj
 	@echo ... lerBMP.i
 	@echo ... lerBMP.s
@@ -1196,36 +878,21 @@ help:
 	@echo ... lightposition.obj
 	@echo ... lightposition.i
 	@echo ... lightposition.s
-	@echo ... linha.obj
-	@echo ... linha.i
-	@echo ... linha.s
-	@echo ... load.obj
-	@echo ... load.i
-	@echo ... load.s
+	@echo ... luz.obj
+	@echo ... luz.i
+	@echo ... luz.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
-	@echo ... mochila.obj
-	@echo ... mochila.i
-	@echo ... mochila.s
-	@echo ... mochila2.obj
-	@echo ... mochila2.i
-	@echo ... mochila2.s
-	@echo ... moverEixo.obj
-	@echo ... moverEixo.i
-	@echo ... moverEixo.s
-	@echo ... other.obj
-	@echo ... other.i
-	@echo ... other.s
-	@echo ... pc.obj
-	@echo ... pc.i
-	@echo ... pc.s
-	@echo ... quadrado.obj
-	@echo ... quadrado.i
-	@echo ... quadrado.s
-	@echo ... rotacao.obj
-	@echo ... rotacao.i
-	@echo ... rotacao.s
+	@echo ... main1.obj
+	@echo ... main1.i
+	@echo ... main1.s
+	@echo ... primitive.obj
+	@echo ... primitive.i
+	@echo ... primitive.s
+	@echo ... skating.obj
+	@echo ... skating.i
+	@echo ... skating.s
 	@echo ... teapotsgalore.obj
 	@echo ... teapotsgalore.i
 	@echo ... teapotsgalore.s
@@ -1238,9 +905,12 @@ help:
 	@echo ... textures.obj
 	@echo ... textures.i
 	@echo ... textures.s
-	@echo ... transform.obj
-	@echo ... transform.i
-	@echo ... transform.s
+	@echo ... trabalho2.obj
+	@echo ... trabalho2.i
+	@echo ... trabalho2.s
+	@echo ... trackball.obj
+	@echo ... trackball.i
+	@echo ... trackball.s
 .PHONY : help
 
 

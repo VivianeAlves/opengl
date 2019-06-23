@@ -10,8 +10,10 @@
 //#include <gl/glut.h>
 //#include <stdio.h>
 //#include <GL/glaux.h>
-//#include "carro.h"
-//#include "banana.h"
+//#include "basket.h"
+//#include "prato.h"
+//#include "basket1.h"
+//#include "bandeja2.h"
 //
 ////Função para Carregar uma imagem .BMP
 //AUX_RGBImageRec *LoadBMP(char *Filename) {
@@ -71,10 +73,10 @@
 //    glEnableClientState(GL_NORMAL_ARRAY); //enable normal array
 //    glEnableClientState(GL_TEXTURE_COORD_ARRAY); //enable texcoord array
 //
-//    glVertexPointer(3, GL_FLOAT, 0, bananaVerts);
-//    glNormalPointer(GL_FLOAT, 0, bananaNormals);
-//    glTexCoordPointer(2, GL_FLOAT, 0, bananaTexCoords);
-//    glDrawArrays(GL_TRIANGLES, 0, bananaNumVerts);
+//    glVertexPointer(3, GL_FLOAT, 0, bandeja2Verts);
+//    glNormalPointer(GL_FLOAT, 0, bandeja2Normals);
+//    glTexCoordPointer(2, GL_FLOAT, 0, bandeja2TexCoords);
+//    glDrawArrays(GL_TRIANGLES, 0, bandeja2NumVerts);
 //
 //
 ////
@@ -204,7 +206,7 @@
 //        obsZ = 10;
 //
 //        // Comandos de inicialização para textura
-//        imagemTextura = LoadBMP("C:\\Users\\Viviane Alves\\CLionProjects\\opengl\\texturas\\banana.bmp");
+//        imagemTextura = LoadBMP("C:\\Users\\Viviane Alves\\CLionProjects\\opengl\\texturas\\palha2.bmp");
 //        glGenTextures(1, &idTextura);
 //        glBindTexture(GL_TEXTURE_2D, idTextura);
 //        glTexImage2D(GL_TEXTURE_2D, 0, 3, imagemTextura->sizeX,

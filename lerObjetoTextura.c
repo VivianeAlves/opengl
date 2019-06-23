@@ -8,10 +8,8 @@
 //// Este código está baseado nos exemplos disponíveis no livro
 //// "OpenGL SuperBible", 2nd Edition, de Richard S. e Wright Jr.
 //
-//#include <windows.h>
 //#include <gl/glut.h>
 //#include <stdio.h>
-//#include <GL/glaux.h>
 //#include "carro.h"
 //#include <math.h>
 //#include <stdlib.h>
@@ -24,9 +22,9 @@
 //void
 //drawmodel(void) {
 //    if (!pmodel) {
-////         pmodel = glmReadOBJ("C:\\Users\\Viviane Alves\\Documents\\Simulador OpenGL\\tutors\\data\\car.obj");
-//        pmodel = glmReadOBJ("C:\\Users\\Viviane Alves\\Documents\\Car.obj");
-//      //  pmodel = glmReadOBJ("C:\\Users\\Viviane Alves\\CLionProjects\\opengl\\objetos\\cessna.obj");
+//       // pmodel = glmReadOBJ("C:\\Users\\Viviane Alves\\Documents\\Simulador OpenGL\\tutors\\data\\flowers.obj");
+//       // pmodel = glmReadOBJ("C:\\Users\\Viviane Alves\\Documents\\Car.obj");
+//          pmodel = glmReadOBJ("C:\\Users\\Viviane Alves\\CLionProjects\\opengl\\objetos\\telephone_.obj");
 //        if (!pmodel) exit(0);
 //        glmUnitize(pmodel);
 //        glmFacetNormals(pmodel);
@@ -53,9 +51,9 @@
 //    GLint especMaterial = 120;
 //
 //    // Define a refletância do material
-//    glMaterialfv(GL_FRONT, GL_SPECULAR, especularidade);
+////    glMaterialfv(GL_FRONT, GL_SPECULAR, especularidade);
 //    // Define a concentração do brilho
-//    glMateriali(GL_FRONT, GL_SHININESS, especMaterial);
+////    glMateriali(GL_FRONT, GL_SHININESS, especMaterial);
 //
 //    //Ativa o uso da luz ambiente
 ////    glLightModelfv(GL_LIGHT_MODEL_AMBIENT, luzAmbiente);
@@ -74,7 +72,7 @@
 //void Desenha(void) {
 //    // Limpa a janela e o depth buffer
 //    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-//
+//    //glEnable(GL_CULL_FACE);
 //    drawmodel();
 //
 //    glutSwapBuffers();

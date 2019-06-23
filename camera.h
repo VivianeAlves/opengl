@@ -1,47 +1,15 @@
-///////////////////////////////////////////////////////////////
-//Camera.h
-//
-//Author: Philipp Crocoll
-//Contact: philipp.crocoll@web.de
-//		   www.codecolony.de
+#pragma once
+#include <GL\freeglut.h>
 
-#include <gl\glut.h>		// Need to include it here because the GL* types are required
-#define PI 3.1415265359
-#define PIdiv180 3.1415265359/180.0
-
-/////////////////////////////////
-//Note: All angles in degrees  //
-/////////////////////////////////
-
-struct SF3dVector  //Float 3d-vect
+/*
+the Camera controling the external view point.
+*/
+class Camera
 {
-	GLfloat x,y,z;
-};
-
-class CCamera
-{
-private:
-	SF3dVector Position;
-	SF3dVector ViewDir;		/*Not used for rendering the camera, but for "moveforwards"
-							So it is not necessary to "actualize" it always. It is only
-							actualized when ViewDirChanged is true and moveforwards is called*/
-	bool ViewDirChanged;
-	GLfloat RotatedX, RotatedY, RotatedZ;	
-	void GetViewDir ( void );
 public:
-	CCamera();				//inits the values (Position: (0|0|0) Target: (0|0|-1) )
-	void Render ( void );	//executes some glRotates and a glTranslate command
-							//Note: You should call glLoadIdentity before using Render
-	void Move ( SF3dVector Direction );
-	void RotateX ( GLfloat Angle );
-	void RotateY ( GLfloat Angle );
-	void RotateZ ( GLfloat Angle );
-	void RotateXYZ ( SF3dVector Angles );
-	void MoveForwards ( GLfloat Distance );
-	void StrafeRight ( GLfloat Distance );
+	Camera();
+	GLfloat position[3];
+	GLfloat target[3];
+	~Camera() = default;
 };
 
-
-SF3dVector F3dVector ( GLfloat x, GLfloat y, GLfloat z );
-SF3dVector AddF3dVectors ( SF3dVector * u, SF3dVector * v);
-void AddF3dVectorToVector ( SF3dVector * Dst, SF3dVector * V2);

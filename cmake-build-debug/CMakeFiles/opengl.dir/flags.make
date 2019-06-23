@@ -9,7 +9,7 @@ C_DEFINES =
 
 C_INCLUDES = @CMakeFiles/opengl.dir/includes_C.rsp
 
-CXX_FLAGS = -g   -std=gnu++14
+CXX_FLAGS =  -std=c++11 -g  
 
 CXX_DEFINES = 
 

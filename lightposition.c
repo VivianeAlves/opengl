@@ -154,7 +154,7 @@
 //drawmodel(void)
 //{
 //    if (!pmodel) {
-//        pmodel = glmReadOBJ("C:\\Users\\Viviane Alves\\Documents\\Simulador OpenGL\\tutors\\data\\Low.obj");
+//        pmodel = glmReadOBJ("C:\\Users\\Viviane Alves\\Documents\\Simulador OpenGL\\tutors\\data\\mario.obj");
 //        if (!pmodel) exit(0);
 //        glmUnitize(pmodel);
 //        glmFacetNormals(pmodel);

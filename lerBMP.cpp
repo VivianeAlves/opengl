@@ -4,8 +4,15 @@
 //#include "simple_obj.h"
 //#include <stdio.h>
 //#include "carro.h"
-//#include "axe.h"
-//#include "banana.h"
+//#include <GL/glaux.h>
+//
+//
+//
+//
+//
+//GLuint idTextura;
+//AUX_RGBImageRec *imagemTextura;
+//
 //GLfloat CarPosZ = -2;
 //GLfloat CarPosY = -5;
 //GLfloat CarPosX = -1;
@@ -23,6 +30,33 @@
 //    glEnable(GL_DEPTH_TEST);
 //    glEnable(GL_LIGHTING);
 //    glEnable(GL_LIGHT0);
+//
+////    imagemTextura = LoadBMP("C:\\Users\\Viviane Alves\\CLionProjects\\opengl\\texturas\\1_store.bmp");
+////    glGenTextures(1, &idTextura);
+////    glBindTexture(GL_TEXTURE_2D, idTextura);
+////    glTexImage2D(GL_TEXTURE_2D, 0, 3, imagemTextura->sizeX,
+////                 imagemTextura->sizeY, 0, GL_RGB, GL_UNSIGNED_BYTE,
+////                 imagemTextura->data);
+////    glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MIN_FILTER,GL_LINEAR);
+////    glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MAG_FILTER,GL_LINEAR);
+////    glEnable(GL_TEXTURE_2D);
+//
+//}
+//
+//
+////Função para Carregar uma imagem .BMP
+//AUX_RGBImageRec *LoadBMP(char *Filename) {
+//    FILE *File = NULL;
+//    if (!Filename) {
+//        return NULL;
+//    }
+//    File = fopen(Filename, "r");
+//    if (File)    // Se o arquivo existe
+//    {
+//        fclose(File);
+//        return auxDIBImageLoad(Filename);//Retorna a imagem
+//    }
+//    return NULL;
 //}
 //
 //
@@ -46,22 +80,25 @@
 //    //posição da luz
 //    glLightfv(GL_LIGHT0, GL_POSITION, light_position);
 //    glPushMatrix();
-//    glTranslatef(CarPosX, CarPosY, CarPosZ);
+////    glTranslatef(CarPosX, CarPosY, CarPosZ);
 ////    glutSolidTeapot(1.0);
 ////glutSolidSphere(2,60,30);
 //
-//glTranslatef(0,6,2);
-//glScalef(5,5,5);
+////glTranslatef(0,6,2);
+////glScalef(5,5,5);
 //
-//    glEnableClientState(GL_VERTEX_ARRAY); //enable vertex array
-//    glEnableClientState(GL_NORMAL_ARRAY); //enable normal array
-//    glEnableClientState(GL_TEXTURE_COORD_ARRAY); //enable texcoord array
+////    glEnableClientState(GL_VERTEX_ARRAY); //enable vertex array
+////    glEnableClientState(GL_NORMAL_ARRAY); //enable normal array
+////    glEnableClientState(GL_TEXTURE_COORD_ARRAY); //enable texcoord array
+////
+////
+////    glVertexPointer(3, GL_FLOAT, 0, carroVerts);
+////    glNormalPointer(GL_FLOAT, 0, carroNormals);
+////    glTexCoordPointer(2, GL_FLOAT, 0, carroTexCoords);
+////    glDrawArrays(GL_TRIANGLES, 0, carroNumVerts);
 //
-//
-//    glVertexPointer(3, GL_FLOAT, 0, carroVerts);
-//    glNormalPointer(GL_FLOAT, 0, carroNormals);
-//    glTexCoordPointer(2, GL_FLOAT, 0, carroTexCoords);
-//    glDrawArrays(GL_TRIANGLES, 0, carroNumVerts);
+//    SimpleObj_t* myObj = loadObj("C:\\Users\\Viviane Alves\\Desktop\\MarioTyper-master\\3DGame\\res\\mario_obj.obj");
+//    drawObj(myObj);
 //
 //
 //    glFlush();

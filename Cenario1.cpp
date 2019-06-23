@@ -1,7 +1,6 @@
 //#define SIMPLE_OBJ_IMP
-//
-//#include <GL/glut.h>
 //#include "simple_obj.h"
+//#include <GL/glut.h>
 //#include <stdio.h>
 //
 //
@@ -55,7 +54,7 @@
 //
 //    //cor do material do objeto
 //    glMaterialfv(GL_FRONT, GL_DIFFUSE, material_diffuse_car);
-//    SimpleObj_t *myObj = loadObj("C:\\Users\\Viviane Alves\\Documents\\car.obj");
+//    SimpleObj_t *myObj = loadObj("C:\\Users\\Viviane Alves\\Documents\\Car.obj");
 //    drawObj(myObj);
 //    glPopMatrix();
 //
@@ -65,7 +64,7 @@
 //    glTranslatef(-3, -3, -6);
 //    //cor do material do objeto
 //    glMaterialfv(GL_FRONT, GL_DIFFUSE, material_diffuse_ponte);
-//    SimpleObj_t *myObj1 = loadObj("C:\\Users\\Viviane Alves\\Documents\\ponte.obj");
+//    SimpleObj_t *myObj1 = loadObj("C:\\Users\\Viviane Alves\\Documents\\objeto.obj");
 //    drawObj(myObj1);
 //    glPopMatrix();
 //

@@ -1,255 +1,319 @@
-///**********************************************************************
-//
-//  Texture mapping with OpenGL
-//
-//  June, 13th, 2000
-//
-//  This tutorial was written by Philipp Crocoll
-//  Contact:
-//	philipp.crocoll@web.de
-//	www.codecolony.de
-//
-//  Every comment would be appreciated.
-//
-//  If you want to use parts of any code of mine:
-//	let me know and
-//	use it!
-//
-//***********************************************************************
-//ESC: exit
-//
-//CAMERA movement:
-//w : forwards
-//s : backwards
-//a : turn left
-//d : turn right
-//x : turn up
-//y : turn down
-//v : strafe right
-//c : strafe left
-//r : move up
-//f : move down
-//b : switch between BfC and drawing the frontfaces wired
-//***********************************************************************/
-//
-//#include <GL\glut.h>
-//#include <GL\glaux.h>        //Used for loading the textures
 //#include <windows.h>
-//#include "camera.h"
-//#include "textures.h"
-//#include "carro.h"
+//#include "imgui/imgui.h"
+//#include "imgui/imgui_impl_freeglut.h"
+//#include "imgui/imgui_impl_opengl2.h"
+//#include <GL\freeglut.h>
+//#include "Context.h"
+//#include <iostream>
+//#include <fstream>
 //
-//CCamera Camera;
+//using namespace std;
+//using std::cout;
 //
-//GLfloat YRotated = 0.0;
+////single point of access to all rendered objects
+//Context gContext;
 //
-//COGLTexture Tex1, Tex2;
+////gui interaction handling via imgui
+//void guiInteraction()
+//{
+//	ImGuiWindowFlags window_flags = 0;
+//	if (ImGui::Begin("Opengl Dog Scene", false, window_flags))
+//	{
+//		ImGui::RadioButton("external view", &gContext.isDogView, 0); ImGui::SameLine();
+//		ImGui::RadioButton("doggy view", &gContext.isDogView, 1);
 //
-//void InitTextures(void) {
-//    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
-//    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+//		if (ImGui::CollapsingHeader("Dog"))
+//		{
+//			ImGui::SliderFloat("head horizontal", &gContext.dog.headHorizontalAngle, -30.0f, 30.0f);
+//			ImGui::SliderFloat("head vertical", &gContext.dog.headVerticalAngle, -5.0f, 50.0f);
+//			ImGui::SliderFloat("tail horizontal", &gContext.dog.tailHorizontalAngle, -25.0f, 25.0f);
+//			ImGui::SliderFloat("tail vertical", &gContext.dog.tailVerticalAngle, -14.0f, 50.0f);
+//		}
+//		if (ImGui::CollapsingHeader("Camera"))
+//		{
+//			ImGui::SliderFloat("camera source x", &gContext.camera.position[0], -10.0f, 10.0f);
+//			ImGui::SliderFloat("camera source y", &gContext.camera.position[1], -10.0f, 10.0f);
+//			ImGui::SliderFloat("camera source z", &gContext.camera.position[2], -10.0f, 10.0f);
+//			ImGui::SliderFloat("camera target x", &gContext.camera.target[0], -10.0f, 10.0f);
+//			ImGui::SliderFloat("camera target y", &gContext.camera.target[1], -10.0f, 10.0f);
+//			ImGui::SliderFloat("camera target z", &gContext.camera.target[2], -10.0f, 10.0f);
+//		}
+//		static bool pointlight = true;
+//		static bool spotlight = true;
+//		if (ImGui::CollapsingHeader("Lights"))
+//		{
+//			ImGui::SliderFloat("ambient light adjust", &gContext.globalAmbient, 0.0f, 1.0f);
+//			ImGui::Checkbox("enable pointlight", &pointlight);
 //
-//    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-//    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST_MIPMAP_NEAREST);
+//			ImGui::ColorEdit3("point light color", reinterpret_cast<float*>(&gContext.pointlight.color));
+//			ImGui::SliderFloat("pointlight source x", &gContext.pointlight.position[0], -10.0f, 10.0f);
+//			ImGui::SliderFloat("pointlight source y", &gContext.pointlight.position[1], -10.0f, 10.0f);
+//			ImGui::SliderFloat("pointlight source z", &gContext.pointlight.position[2], -10.0f, 10.0f);
 //
-//    Tex1.LoadFromFile("C:\\Users\\Viviane Alves\\CLionProjects\\opengl\\texturas\\tex1.bmp");
-//    Tex2.LoadFromFile("C:\\Users\\Viviane Alves\\CLionProjects\\opengl\\texturas\\tex2.bmp");
+//			ImGui::Checkbox("enable spotlight", &spotlight);
+//			ImGui::ColorEdit3("spotlight color", reinterpret_cast<float*>(&gContext.spotlight.color));
+//			ImGui::SliderFloat("spotlight source x", &gContext.spotlight.position[0], -10.0f, 10.0f);
+//			ImGui::SliderFloat("spotlight source y", &gContext.spotlight.position[1], -10.0f, 10.0f);
+//			ImGui::SliderFloat("spotlight source z", &gContext.spotlight.position[2], -10.0f, 10.0f);
+//			ImGui::SliderFloat("spotlight target x", &gContext.spotlight.target[0], -10.0f, 10.0f);
+//			ImGui::SliderFloat("spotlight target y", &gContext.spotlight.target[1], -10.0f, 10.0f);
+//			ImGui::SliderFloat("spotlight target z", &gContext.spotlight.target[2], -10.0f, 10.0f);
+//			ImGui::SliderFloat("spotlight cutoff", &gContext.spotlight.cutoff, 0.0f, 90.0f);
+//			ImGui::SliderFloat("spotlight exponent", &gContext.spotlight.exponent, 0.0f, 90.0f);
 //
-//    glTexEnvf(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_REPLACE);
-//
+//			pointlight ? gContext.pointlight.enable() : gContext.pointlight.disable();
+//			spotlight ? gContext.spotlight.enable() : gContext.spotlight.disable();
+//		}
+//		if (ImGui::CollapsingHeader("Walls"))
+//		{
+//			ImGui::SliderFloat("alpha channel", &gContext.walls.alpha, 0.0f, 1.0f);
+//		}
+//		if (ImGui::CollapsingHeader("Help"))
+//		{
+//			ImGui::Text("Viewing modes:");
+//			ImGui::TextWrapped((string("There are 2 viewing modes, 'external view' and doggy view', external view is controlled by the 'Camera'")+
+//								string(" section, the 'doggy view' is controlled explicitly by the doggy head position and rotation. ")).c_str());
+//			ImGui::Text("Keyboard control:");
+//			ImGui::TextWrapped((string("The keyboard arrows control the doggy position on the XZ plane - the floor plane.").c_str()));
+//			ImGui::Text("Dog section:");
+//			ImGui::TextWrapped((string("The controls in the Dog section are controlling the head vertical and horizontal orientaion and the")+
+//								string(" tail vertical and horizontal orientation")).c_str());
+//			ImGui::Text("Camera section:");
+//			ImGui::TextWrapped((string("The controls in the Camera section are controling the camera position in space and the camera target")+
+//								string(" point in space.")).c_str());
+//			ImGui::Text("Lights section:");
+//			ImGui::TextWrapped((string("The controls in the Light section are controling the Light in the scene, 'pointlight' and 'spotlight' are 2") +
+//								string(" light sources that can be turned on a off by the checkboxes. 'ambient light adjust' controls the global ambient light value, ") +
+//								string(" The spotlight controls the spotlight position in space and the spotlight target in space. the pointlight controls the pointlight position in space")).c_str());
+//		}
+//		if (ImGui::Button("Quit"))
+//		{
+//			exit(0);
+//		}
+//	}
+//	ImGui::End();
 //}
 //
-//void DrawCube(void) {
-//
-//    glEnable(GL_DEPTH_TEST);
-//    glShadeModel(GL_SMOOTH);
-//
-//
-//    glEnableClientState(GL_VERTEX_ARRAY); //enable vertex array
-//    glEnableClientState(GL_NORMAL_ARRAY); //enable normal array
-//    glEnableClientState(GL_TEXTURE_COORD_ARRAY); //enable texcoord array
-//
-//    glVertexPointer(3, GL_FLOAT, 0, carroVerts);
-//    glNormalPointer(GL_FLOAT, 0, carroNormals);
-//    glTexCoordPointer(2, GL_FLOAT, 0, carroTexCoords);
-//    glDrawArrays(GL_TRIANGLES, 0, carroNumVerts);
-//
-//
-//    //Draws a cube with two shaded, two one-colored and two textured faces
-////	glBegin(GL_QUADS);
-////		glColor3f(1.0,0.0,0.0);
-////	  //front:
-////		glVertex3f(-0.5,-0.5,0.5);
-////		glVertex3f(-0.5,0.5,0.5);
-////		glVertex3f(0.5,0.5,0.5);
-////		glVertex3f(0.5,-0.5,0.5);
-////
-////	  //back:
-////		glColor3f(0.0,0.0,1.0);
-////		glVertex3f(-0.5,-0.5,-0.5);
-////		glVertex3f(0.5,-0.5,-0.5);
-////		glVertex3f(0.5,0.5,-0.5);
-////		glVertex3f(-0.5,0.5,-0.5);
-////
-////	  //top:
-////		glColor3f(0.0,0.6,1.0);
-////		glVertex3f(-0.5,0.5,-0.5);
-////		glVertex3f(0.5,0.5,-0.5	);
-////		glColor3f(1.0,0.6,1.0);
-////		glVertex3f(0.5,0.5,0.5);
-////		glVertex3f(-0.5,0.5,0.5);
-////
-////	  //bottom:
-////		glColor3f(0.0,0.6,0.0);
-////		glVertex3f(-0.5,-0.5,-0.5);
-////		glColor3f(0.6,0.6,0.6);
-////		glVertex3f(-0.5,-0.5,0.5);
-////		glColor3f(1.0,1.0,0.3);
-////		glVertex3f(0.5,-0.5,0.5);
-////		glColor3f(0.0,1.0,0.0);
-////		glVertex3f(0.5,-0.5,-0.5);
-////	glEnd();
-//
-//    glEnable(GL_TEXTURE_2D);
-////
-//    Tex1.SetActive();
-//
-//    glBegin(GL_TRIANGLES);
-//    carroTexCoords;
-//    glEnd();
-//
-//
-////	glBegin(GL_QUADS);
-////	  //left:
-////		glTexCoord2f(1.0,0.0);
-////		glVertex3f(-0.5,-0.5,-0.5);
-////		glTexCoord2f(1.0,1.0);
-////		glVertex3f(-0.5,0.5,-0.5);
-////		glTexCoord2f(0.0,1.0);
-////		glVertex3f(-0.5,0.5,0.5);
-////		glTexCoord2f(0.0,0.0);
-////		glVertex3f(-0.5,-0.5,0.5);
-////	glEnd();
-////	  //right:
-////	Tex2.SetActive();
-////	glBegin(GL_QUADS);
-////		glTexCoord2f(0.0,0.0);
-////		glVertex3f(0.5,-0.5,-0.5);
-////		glTexCoord2f(1.0,0.0);
-////		glVertex3f(0.5,-0.5,0.5);
-////		glTexCoord2f(1.0,1.0);
-////		glVertex3f(0.5,0.5,0.5);
-////		glTexCoord2f(0.0,1.0);
-////		glVertex3f(0.5,0.5,-0.5);
-////	glEnd();
-////	glDisable(GL_TEXTURE_2D);
-//
-//
+////keyboard events handling
+//void keyboard(int key, int, int) {
+//	switch (key) {
+//		case GLUT_KEY_LEFT:  gContext.dog.nextMove = []() { glRotatef(7, 0, 1, 0); };   break;
+//		case GLUT_KEY_RIGHT: gContext.dog.nextMove = []() { glRotatef(-7, 0, 1, 0); };  break;
+//		case GLUT_KEY_UP:	 gContext.dog.nextMove = []() { glTranslated(0, 0, 0.2); }; break;
+//		case GLUT_KEY_DOWN:  gContext.dog.nextMove = []() { glTranslated(0, 0, -0.2); };break;
+//	}
+//	glutPostRedisplay();
 //}
 //
-//void reshape(int x, int y) {
-//    if (y == 0 || x == 0) return;
+//void drawScene() {
+//	glPushMatrix();
+//	glTranslatef(gContext.pointlight.position[0], gContext.pointlight.position[1], gContext.pointlight.position[2]);
+//	gContext.pointlight.addLight();
+//	glPopMatrix();
 //
-//    glMatrixMode(GL_PROJECTION);
-//    glLoadIdentity();
-//    gluPerspective(40.0, (GLdouble) x / (GLdouble) y, 0.5, 20.0);
+//	glPushMatrix();
+//	glTranslatef(gContext.spotlight.position[0], gContext.spotlight.position[1], gContext.spotlight.position[2]);
+//	gContext.spotlight.addlight();
+//	glPopMatrix();
 //
-//    glMatrixMode(GL_MODELVIEW);
-//    glViewport(0, 0, x, y);
+//	glPushMatrix();
+//	glTranslatef(gContext.spotlight.position[0], gContext.spotlight.position[1], gContext.spotlight.position[2]);
+//	gContext.spotlight.draw();
+//	glPopMatrix();
+//
+//	glPushMatrix();
+//	glTranslatef(gContext.pointlight.position[0], gContext.pointlight.position[1], gContext.pointlight.position[2]);
+//	gContext.pointlight.draw();
+//	glPopMatrix();
+//
+//	gContext.floor.draw();
+//
+//	glPushMatrix();
+//	glMultMatrixf(gContext.dog.local);
+//	gContext.dog.draw();
+//	glPopMatrix();
+//
+//	glPushMatrix();
+//	glTranslated(-3, 1.05, -3);
+//	gContext.table.draw();
+//	glPopMatrix();
+//
+//	glPushMatrix();
+//	glTranslated(-2.2, 1.35, -3);
+//	gContext.teapot.draw();
+//	glPopMatrix();
+//
+//	glPushMatrix();
+//	glTranslatef(-3.0f, 0, 3);
+//	glRotatef(90, 0, 1, 0);
+//	gContext.snowman.draw();
+//	glPopMatrix();
+//
+//	glPushMatrix();
+//	glTranslated(1.0f, 1.5f, -4.99f);
+//	gContext.art.draw();
+//	glPopMatrix();
+//
+//	gContext.walls.draw({ 0, 1 });
 //}
 //
-//void Display(void) {
-//    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-//    glLoadIdentity();
-//    Camera.Render();
-//    glRotatef(YRotated, 0.0, 1.0, 0.0);
-//    DrawCube();
+////display handling, rendering all objects
+//void display() {
+//	//imgui new frame
+//	ImGui_ImplOpenGL2_NewFrame();
+//	ImGui_ImplFreeGLUT_NewFrame();
 //
-//    glFlush();
-//    glutSwapBuffers();
+//	//update interaction
+//	guiInteraction();
 //
+//	ImGui::Render();
+//	ImGuiIO& io = ImGui::GetIO();
+//
+//	glViewport(0, 0, (GLsizei)io.DisplaySize.x, (GLsizei)io.DisplaySize.y);
+//	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT);
+//	glMatrixMode(GL_PROJECTION);
+//	glLoadIdentity();
+//	gluPerspective(40.0, io.DisplaySize.x / io.DisplaySize.y, 1.0, 150.0);
+//	glMatrixMode(GL_MODELVIEW);
+//	glLoadIdentity();
+//
+//	//update the dog's transformation matrix
+//	if (gContext.dog.nextMove) {
+//		gContext.dog.isMoving = true;
+//		GLfloat viewModelMatrix[16];
+//		glGetFloatv(GL_MODELVIEW_MATRIX, viewModelMatrix);
+//		glLoadMatrixf(gContext.dog.local);
+//		gContext.dog.nextMove();
+//		gContext.dog.nextMove = nullptr;
+//		glGetFloatv(GL_MODELVIEW_MATRIX, gContext.dog.local);
+//		glLoadMatrixf(viewModelMatrix);
+//	}
+//
+//	//change viewing mode if in Doggy view setup
+//	if (gContext.isDogView) {
+//		GLfloat viewModelMatrix[16];
+//		glGetFloatv(GL_MODELVIEW_MATRIX, viewModelMatrix);
+//		glLoadMatrixf(gContext.dog.local);
+//
+//		glRotatef(gContext.dog.headVerticalAngle, 1, 0, 0);
+//		glRotatef(gContext.dog.headHorizontalAngle, 0, 1, 0);
+//		glTranslated(0, 0.75, 0.9);
+//
+//		GLfloat cameraPoseInDogView[16];
+//		glGetFloatv(GL_MODELVIEW_MATRIX, cameraPoseInDogView);
+//		glLoadMatrixf(viewModelMatrix);
+//
+//		//Hack...
+//		GLfloat zAngle = atan2(-cameraPoseInDogView[2], cameraPoseInDogView[0]);
+//		GLfloat yAngle = atan2(-cameraPoseInDogView[9], cameraPoseInDogView[5]);
+//
+//		gluLookAt(cameraPoseInDogView[12], cameraPoseInDogView[13], cameraPoseInDogView[14],
+//				  sin(zAngle) + cameraPoseInDogView[12],
+//				  -yAngle + cameraPoseInDogView[13],
+//				  cos(zAngle) + cameraPoseInDogView[14],
+//				  0, 1, 0);
+//	}
+//	else
+//	{
+//		//view mode of camera view setup
+//		gluLookAt(gContext.camera.position[0], gContext.camera.position[1], gContext.camera.position[2],
+//				  gContext.camera.target[0], gContext.camera.target[1], gContext.camera.target[2], 0, 1, 0);
+//	}
+//
+//	GLfloat globalAmbientVec[4] = { gContext.globalAmbient, gContext.globalAmbient, gContext.globalAmbient, 1.0 };
+//	glLightModelfv(GL_LIGHT_MODEL_AMBIENT, globalAmbientVec);
+//
+//	drawScene();
+//
+//	//create mirror effect
+//	glEnable(GL_STENCIL_TEST);
+//	glColorMask(0, 0, 0, 0); //Disable drawing colors to the screen
+//	glDisable(GL_DEPTH_TEST); //Disable depth testing
+//	glStencilFunc(GL_ALWAYS, 1, 1); //Make the stencil test always pass
+//	//Make pixels in the stencil buffer be set to 1 when the stencil test passes
+//	glStencilOp(GL_KEEP, GL_KEEP, GL_REPLACE);
+//	//Set all of the pixels covered by the mirror to be 1 in the stencil buffer
+//	glPushMatrix();
+//	glRotatef(90, 0, 1, 0);
+//	glTranslatef(-1, 0.2f, 4.99f);
+//	gContext.mirror.draw();
+//	glPopMatrix();
+//
+//	glColorMask(1, 1, 1, 1); //Enable drawing colors to the screen
+//	glEnable(GL_DEPTH_TEST); //Enable depth testing
+//	//Make the stencil test pass only when the pixel is 1 in the stencil buffer
+//	glStencilFunc(GL_EQUAL, 1, 1);
+//	glStencilOp(GL_KEEP, GL_KEEP, GL_KEEP); //Make the stencil buffer not change
+//
+//	//Draw the scene, reflected in the mirror
+//	glPushMatrix();
+//	glTranslatef(10.001f, 0, 0);
+//	glScalef(-1, 1, 1);
+//	drawScene();
+//	glPopMatrix();
+//
+//	glDisable(GL_STENCIL_TEST); //Disable using the stencil buffer
+//
+//	//Blend the mirror onto the screen
+//	glEnable(GL_BLEND);
+//	glPushMatrix();
+//	glRotatef(90, 0, 1, 0);
+//	glTranslatef(-1, 0.2f, 4.99f);
+//	gContext.mirror.draw();
+//	glPopMatrix();
+//	glDisable(GL_BLEND);
+//
+//	//add the wall next to the mirror
+//	gContext.walls.draw({ 2 });
+//
+//	//imgui does not handle light well
+//	glDisable(GL_LIGHTING);
+//	ImGui_ImplOpenGL2_RenderDrawData(ImGui::GetDrawData());
+//	glEnable(GL_LIGHTING);
+//
+//	glFlush();
+//	glutSwapBuffers();
+//	glutPostRedisplay();
 //}
 //
-//void KeyDown(unsigned char key, int x, int y) {
-//    switch (key) {
-//        case 27:        //ESC
-//            PostQuitMessage(0);
-//            break;
-//        case 'a':
-//            Camera.RotateY(5.0);
-//            Display();
-//            break;
-//        case 'd':
-//            Camera.RotateY(-5.0);
-//            Display();
-//            break;
-//        case 'w':
-//            Camera.MoveForwards(-0.1);
-//            Display();
-//            break;
-//        case 's':
-//            Camera.MoveForwards(0.1);
-//            Display();
-//            break;
-//        case 'x':
-//            Camera.RotateX(5.0);
-//            Display();
-//            break;
-//        case 'y':
-//            Camera.RotateX(-5.0);
-//            Display();
-//            break;
-//        case 'c':
-//            Camera.StrafeRight(-0.1);
-//            Display();
-//            break;
-//        case 'v':
-//            Camera.StrafeRight(0.1);
-//            Display();
-//            break;
-//        case 'r':
-//            Camera.Move(F3dVector(0.0, 0.1, 0.0));
-//            Display();
-//            break;
-//        case 'f':
-//            Camera.Move(F3dVector(0.0, -0.1, 0.0));
-//            Display();
-//            break;
-//        case 'b':
-//            if (glIsEnabled(GL_CULL_FACE) == GL_TRUE) {
-//                glDisable(GL_CULL_FACE);
-//                glPolygonMode(GL_FRONT, GL_LINE);
-//                glPolygonMode(GL_BACK, GL_FILL);
-//            } else {
-//                glEnable(GL_CULL_FACE);
-//                glPolygonMode(GL_FRONT, GL_FILL);
-//            }
-//            Display();
-//            break;
-//    }
-//}
+//int main(int argc, char** argv) {
+//	glutInit(&argc, argv);
+//	glutSetOption(GLUT_ACTION_ON_WINDOW_CLOSE, GLUT_ACTION_GLUTMAINLOOP_RETURNS);
+//	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGBA | GLUT_DEPTH | GLUT_MULTISAMPLE | GLUT_STENCIL);
+//	glutInitWindowPosition(80, 80);
+//	glutInitWindowSize(1200, 600);
+//	glutCreateWindow("opengl dog scene");
+//	glutDisplayFunc(display);
 //
-//void Idle(void) {
-//    YRotated += 0.4;
-//    Display();
-//}
+//	// Setup ImGui binding
+//	ImGui::CreateContext();
 //
-//int main(int argc, char **argv) {
-//    glutInit(&argc, argv);
-//    glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
-//    glutInitWindowSize(300, 300);
-//    glutCreateWindow("Textures and BfC");
-//    glFrontFace(GL_CW);  //Clockwise is front in "DrawCube()"
-//    glCullFace(GL_BACK);
-//    glEnable(GL_CULL_FACE);
-//    glEnable(GL_DEPTH_TEST);
-//    Camera.Move(F3dVector(0.0, 0.0, 3.0));
-//    Camera.MoveForwards(1.0);
-//    InitTextures();
-//    glutDisplayFunc(Display);
-//    glutReshapeFunc(reshape);
-//    glutKeyboardFunc(KeyDown);
-//    glutIdleFunc(Idle);
-//    glutMainLoop();
-//    return 0;
+//	ImGui_ImplFreeGLUT_Init();
+//	ImGui_ImplFreeGLUT_InstallFuncs();
+//	ImGui_ImplOpenGL2_Init();
+//
+//	glutSpecialFunc(keyboard);
+//	glShadeModel(GL_SMOOTH);
+//	glEnable(GL_LIGHTING);
+//	glLightModeli(GL_LIGHT_MODEL_LOCAL_VIEWER, GL_TRUE);
+//	glEnable(GL_DEPTH_TEST);
+//	glEnable(GL_NORMALIZE);
+//	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+//
+//	gContext.pointlight.enable();
+//	gContext.spotlight.enable();
+//	gContext.dog.init();
+//	gContext.art.init();
+//
+//	// Setup style
+//	ImGui::StyleColorsClassic();
+//
+//	glutMainLoop();
+//
+//	// Cleanup
+//	ImGui_ImplOpenGL2_Shutdown();
+//	ImGui_ImplFreeGLUT_Shutdown();
+//	ImGui::DestroyContext();
+//
+//	return 0;
 //}
